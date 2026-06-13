@@ -1,0 +1,1516 @@
+{
+  "level": "A2",
+  "passages": [
+    {
+      "id": "A2-read-text-1",
+      "skill": "reading",
+      "text": "Merhaba, ben Mehmet. Size şehrimi ve mahallemi anlatmak istiyorum. Ben Konya'da yaşarım ve bu şehri çok severim. Konya Türkiye'nin en büyük şehirlerinden biri. Şehrimizde birçok alışveriş merkezi, hastane, futbol sahası ve üniversite vardır. Ağabeyim buradaki üniversitede okur. Ben de liseyi bitirdikten sonra burada üniversite okumak isterim.\nMahallemizde bir tane lise, bir tane hastane ve birçok market vardır. Bizim evimiz hastanenin yanında ama liseye çok uzak. Bu yüzden ben okula servis ile giderim. Annem alışverişi mahallemizdeki marketlerden yapar. Ancak bazen büyük alışveriş merkezine gideriz. Alışveriş merkezi evimize uzak bu yüzden araba ile gideriz.\nMahallemizde büyük bir park var. Arkadaşlarımla parkta buluşmayı çok severim. Burada bazen futbol oynarız bazen de voleybol oynarız. Parkın içinde çocuklar için bir oyun alanı da var. Annem küçük kardeşimi bu oyun alanına getirir. Parkın karşısındaki dondurmacının dondurmaları çok güzel. Oyun oynadıktan sonra dondurma yemek çok keyifli.\nŞehrimizde güzel bir bisiklet parkuru da var. Ağabeyim ile birlikte akşamları bisiklet sürmek için dışarı çıkarız. Bisiklet sürmek çok eğlenceli. Ayrıca buradaki bisiklet yolları çok güvenli.\nŞehrimi çok severim ve hep burada yaşamak isterim."
+    },
+    {
+      "id": "A2-listen-text-1",
+      "skill": "listening",
+      "text": "Çocukken her yaz tatilinde köydeki babaanne ve dedemin yanına gidiyordum. Sabahları çok erken uyanıyorduk. Dedem erkenden kalkıp bahçeye gidiyordu, ben de ona yardım ediyordum. Bahçede çalışırken bana eski günlerden bahsediyordu. Anneannem mutfakta yemek yaparken güzel kokular bütün eve yayılıyordu. Mutfaktaki sıcak ortamı çok seviyordum çünkü herkes birlikte vakit geçiriyordu. Gündüzleri arkadaşlarımla sahilde oynuyorduk. Hava çok sıcakken nehre gidip yüzüyorduk. Akşamki sessizlik çok güzeldi. Büyükler sohbet ederken biz çocuklar oyun oynamaya devam ediyorduk. Yağmur yağarken evde kalıyorduk. Anneannem masal anlatmaya başlıyordu ve hepimiz sessizce onu dinliyorduk. Şehirde yaşarken köyü çok özlüyordum. Özellikle yaz akşamlarındaki huzuru hiç unutmuyorum."
+    }
+  ],
+  "questions": [
+    {
+      "id": "A2-gram-001",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Rusya_____ Türkiye_____ uçak_____ geldim.",
+      "options": [
+        "den ; e ; ile",
+        "dan ; yi ; la",
+        "dan; ye; lı",
+        "dan; ye; la"
+      ],
+      "correct": "dan; ye; la",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Rusya'dan (исходный, после гласной → -dan) + Türkiye'ye (направительный, после гласной → -ye) + uçakla (творительный ile → -la, после согласной). Вариант 1 написан 'den;e' — 'den' неверно для Rusya (последняя гласная a→dan). Вариант 4 'dan;ye;la' — правильный."
+    },
+    {
+      "id": "A2-gram-002",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ayşe mavi göz____, kısa saç____ ve uzun boy____ bir kadın.",
+      "options": [
+        "lu ; lı ; lı",
+        "lü ; lı ; lu",
+        "le ; la ; la",
+        "leri ; ları ; ları"
+      ],
+      "correct": "lü ; lı ; lı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Аффикс -lI по гармонии: göz (ö→lü), saç (a→lı), boy (o→lu). НО: вариант 1 даёт 'gözlu' (неверно, ö→lü), вариант 2 даёт 'gözlü / saçlı / boylu' — это правильно. Вариант 2 верный."
+    },
+    {
+      "id": "A2-gram-003",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sen dün konserde___________?",
+      "options": [
+        "midin",
+        "misin",
+        "miydisin",
+        "miydin"
+      ],
+      "correct": "miydin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вопрос о прошлом, именное сказуемое: sen + -ydın → miydin (вопросительная форма прошедшего именного времени для 2 л. ед.ч.). 'miydisin' — разговорная/ошибочная форма, 'misin' — настоящее, 'midin' — неверное спряжение."
+    },
+    {
+      "id": "A2-gram-004",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Giriş ücret_________. Para ödemiyorsunuz.",
+      "options": [
+        "li",
+        "liydi",
+        "siz",
+        "sizdi"
+      ],
+      "correct": "siz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Смысл: 'Вход бесплатный (без платы)'. ücret + siz = ücretsizdiz/ücretsiz — аффикс -SIZ 'без'. Настоящее время, не прошедшее, поэтому 'sizdi' не подходит."
+    },
+    {
+      "id": "A2-gram-005",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Eskiden ben esmer saçlı_________.",
+      "options": [
+        "saçlı vardım",
+        "saçlıdım",
+        "saçlıyım",
+        "saçlıydım"
+      ],
+      "correct": "saçlıydım",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Eskiden — маркер прошлого. Именное прошедшее время 1 л. ед.ч.: saçlı + ydım = saçlıydım. 'saçlıdım' — неверная форма (после гласной нужна -ydım), 'saçlıyım' — настоящее, 'saçlı vardım' — бессмысленная конструкция."
+    },
+    {
+      "id": "A2-gram-006",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "6. 2 ay____ kurs almak istiyorum.",
+      "options": [
+        "da",
+        "ya",
+        "dan",
+        "lık"
+      ],
+      "correct": "lık",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "2 aylık kurs = 'двухмесячный курс'. Аффикс -LIK со значением длительности: ay (последняя гласная a → lık). Остальные варианты не дают нужного смысла."
+    },
+    {
+      "id": "A2-gram-007",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "A: Neden bu kadar kilo aldın? B: Spor yap_______________ bıraktım.",
+      "options": [
+        "mayı",
+        "ması",
+        "maya",
+        "makta",
+        "maktan"
+      ],
+      "correct": "mayı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "bırakmak управляет -mAyI: 'bırakmak' + усечённый инфинитив в форме -mAyI (винительный). spor yapmayı bıraktım = 'бросил заниматься спортом'. Стандартная конструкция уровня А2."
+    },
+    {
+      "id": "A2-gram-008",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Hava bugün dün_________________ sıcak.",
+      "options": [
+        "e kadar",
+        "de gibi",
+        "den daha",
+        "deki kadar"
+      ],
+      "correct": "den daha",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Сравнительная степень: dün + -den daha + sıcak = 'сегодня теплее, чем вчера'. Конструкция -DAn daha уровня А2."
+    },
+    {
+      "id": "A2-gram-009",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Spor yap___________ başladım.",
+      "options": [
+        "mayı",
+        "maya",
+        "meye",
+        "mak"
+      ],
+      "correct": "maya",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "başlamak управляет -mAyA (направительный усечённого инфинитива): spor yapmaya başladım = 'начал заниматься спортом'. yap — основа с a → maya (не meye)."
+    },
+    {
+      "id": "A2-gram-010",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Küçükken her gün kitap oku_________________.",
+      "options": [
+        "yorum",
+        "dum",
+        "rum",
+        "yordum"
+      ],
+      "correct": "yordum",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Küçükken (когда был маленьким) + her gün — маркеры прошедшего повторяющегося действия. Форма -yordu (прошедше-продолжительное): okuyordum. 'dum' — однократное прошедшее, не подходит для регулярного действия в прошлом."
+    },
+    {
+      "id": "A2-gram-011",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Moskova, Kazan'_____________ daha kalabalık.",
+      "options": [
+        "ya",
+        "dan",
+        "yı",
+        "göre"
+      ],
+      "correct": "dan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Сравнительная степень: Kazan'dan daha kalabalık = 'многолюднее, чем Казань'. Конструкция -DAn daha. После апострофа Kazan' + dan."
+    },
+    {
+      "id": "A2-gram-012",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sabah__________ uçak iptal edildi.",
+      "options": [
+        "nın",
+        "ı",
+        "ki",
+        "tan"
+      ],
+      "correct": "ki",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Sabahki uçak = 'утренний самолёт'. Частица -ki образует прилагательное от обстоятельства времени. 'tan' дало бы 'от утра' (не то значение здесь)."
+    },
+    {
+      "id": "A2-gram-013",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ayşe çok yorgun. Ne yap_________?",
+      "options": [
+        "yapsın",
+        "yapmeli",
+        "yap",
+        "yapın"
+      ],
+      "correct": "yapsın",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Совет/пожелание для третьего лица: Ne yapsın? = 'Что ей делать?' Повелительное 3-го л. ед.ч. -sIn. 'yapmeli' — несуществующая форма (правильно: yapmalı)."
+    },
+    {
+      "id": "A2-gram-014",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ben bu akşam ne yemek pişir___________?",
+      "options": [
+        "pişirelim",
+        "pişirsin",
+        "pişirem",
+        "pişireyim"
+      ],
+      "correct": "pişireyim",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Желательное наклонение 1 л. ед.ч. -(y)AyIm: ben pişireyim = 'что мне приготовить?'. 'pişirelim' — 1 л. мн.ч. (мы), 'pişirsin' — 3 л., 'pişirem' — несуществующая форма."
+    },
+    {
+      "id": "A2-gram-015",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ben her gün ofise git______________.",
+      "options": [
+        "giterim",
+        "giderim",
+        "gidirem",
+        "gidirim"
+      ],
+      "correct": "giderim",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Широкое время 1 л. ед.ч. gitmek → исключение: git→gid + er + im = giderim. 'gidirim' — ошибочное озвончение не в том месте."
+    },
+    {
+      "id": "A2-gram-016",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bana yardım et_________________?",
+      "options": [
+        "edebilir misin?",
+        "edir misin?",
+        "etebilir misin?",
+        "ediyor musun?"
+      ],
+      "correct": "edebilir misin?",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вежливая просьба с возможностью: yardım edebilir misin? = 'Можешь мне помочь?'. 'etebilir' — неверное озвончение (et → ed перед гласной → edebilir). 'ediyor musun' — 'ты помогаешь?' (без просьбы)."
+    },
+    {
+      "id": "A2-gram-017",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Özür dilerim, acelem var, bekle___________________.",
+      "options": [
+        "beklemem",
+        "beklerim",
+        "bekleyemem",
+        "bekliyemem"
+      ],
+      "correct": "bekleyemem",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Отрицание возможности 1 л. ед.ч.: bekle + -(y)eme + m = bekleyemem = 'не могу ждать'. 'bekliyemem' — неверная вставная гласная (bekle оканчивается на гласную, вставляется -y-, не -iy-)."
+    },
+    {
+      "id": "A2-gram-018",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Haberlere göre Kahramanmaraş'ta deprem ol____________.",
+      "options": [
+        "oldu",
+        "oluyor",
+        "olmuş",
+        "oldumuş"
+      ],
+      "correct": "olmuş",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Haberlere göre (по новостям) — маркер косвенно-прошедшего -mIş. olmak → olmuş = 'произошло (по сообщениям)'. 'oldumuş' — несуществующая форма."
+    },
+    {
+      "id": "A2-gram-019",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Duydun mu? Zeynep gelecek ay anne ol______________.",
+      "options": [
+        "olmuş",
+        "olacakmış",
+        "olacak",
+        "oldu"
+      ],
+      "correct": "olacakmış",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Duydun mu? (Ты слышала?) — косвенная информация о будущем событии. Форма -ecekmiş (будущее + слухи): olacakmış = 'говорят, станет мамой'. 'olacak' тоже возможно в обиходе, но с duydun mu — нужна форма с -mIş."
+    },
+    {
+      "id": "A2-gram-020",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Yeni İPhone al______________ vazgeçtim.",
+      "options": [
+        "almaktan",
+        "almaya",
+        "almayı",
+        "almak"
+      ],
+      "correct": "almaktan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "vazgeçmek управляет -mAktAn (исходный усечённого инфинитива): almaktan vazgeçtim = 'отказался от покупки'. Стандартная конструкция А2."
+    },
+    {
+      "id": "A2-gram-021",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Kapadokya'yı gör______________ çok istiyorum.",
+      "options": [
+        "görmek",
+        "görmeyi",
+        "görmeye",
+        "görmekten"
+      ],
+      "correct": "görmeyi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "istemek управляет -mAyI (винительный): görmeyi çok istiyorum = 'очень хочу увидеть'. 'görmek istemek' также возможно в А1, но на А2 стандарт — -mAyI istemek."
+    },
+    {
+      "id": "A2-gram-022",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "İstanbul'a taşın__________ karar verdim.",
+      "options": [
+        "taşınmak",
+        "taşınmayı",
+        "taşınmaktan",
+        "taşınmaya"
+      ],
+      "correct": "taşınmaya",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "karar vermek управляет -mAyA (направительный): taşınmaya karar verdim = 'решил переехать'. Устойчивое сочетание уровня А2."
+    },
+    {
+      "id": "A2-gram-023",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Kalem, masa__________ üstünde.",
+      "options": [
+        "masayın",
+        "masanın",
+        "masa",
+        "masada"
+      ],
+      "correct": "masanın",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Послелог üstünde требует родительного падежа: masanın üstünde = 'на столе'. masanın = masa + nın (вставная -n- после гласной + родительный -ın по гармонии a→ın)."
+    },
+    {
+      "id": "A2-gram-024",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Benim yan____________ para yok.",
+      "options": [
+        "yanında",
+        "yanına",
+        "yanıma",
+        "yanımda"
+      ],
+      "correct": "yanımda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "benim yanımda = 'при мне / у меня (при себе)'. yan + ım (1 л. притяжательный) + da (местный падеж). 'yanında' — 'при нём/ней' (3 л.)."
+    },
+    {
+      "id": "A2-gram-025",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Cuma gün________ toplantıya hazır mısın?",
+      "options": [
+        "günki",
+        "günkü",
+        "gündeki",
+        "gününkü"
+      ],
+      "correct": "gündeki",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Cuma günündeki toplantı = 'встреча в пятницу'. Форма -dAki (местный + ki). НО вопрос написан 'Cuma gün___' без 'ün', что делает возможным 'gündeki' (gün+de+ki). 'günkü' используется когда слово уже в основном падеже: 'bugünkü', 'cuma günkü' — тоже возможно. Требует проверки Юли: возможны оба варианта gündeki и günkü. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-026",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu elbise sana çok yakış________! Efsane görünüyor.",
+      "options": [
+        "yakışıklı",
+        "yakıştımış",
+        "yakışmış",
+        "yakıştır"
+      ],
+      "correct": "yakışmış",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Yakışmış = восхищённое 'как идёт!' (эмоциональное -mIş при прямом наблюдении). 'yakışıklı' — прилагательное 'красивый', не глагол. 'yakıştır' — каузатив. 'yakıştımış' — несуществующая форма. Требует проверки: возможно, автор имел в виду другой вариант. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-027",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ben tatil_____ hep kilo alırım.",
+      "options": [
+        "deyken",
+        "deki",
+        "in",
+        "den"
+      ],
+      "correct": "deyken",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "tatildeyken = 'когда я в отпуске'. Конструкция -DA + -(y)ken. Широкое время alırım + контекст повторяющегося действия."
+    },
+    {
+      "id": "A2-gram-028",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Burada sigara iç___.",
+      "options": [
+        "içmez",
+        "içmeli",
+        "içmeyin",
+        "için"
+      ],
+      "correct": "içmeyin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Запрет: içmeyin = 'не курите' (отрицательное повелительное 2 л. мн.ч. / вежливое). Таблички/объявления. 'içmeli' — должествование (не запрет), 'için' — 'для'."
+    },
+    {
+      "id": "A2-gram-029",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ayşe'nin bacağı ağrıyor. Ne yap___________?",
+      "options": [
+        "ın",
+        "sınlar",
+        "mesi",
+        "sın"
+      ],
+      "correct": "sın",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Совет/пожелание для 3-го лица ед.ч.: Ne yapsın? = 'Что ей делать?'. Повелительное 3 л. ед.ч. -sIn. 'ın' — 2 л. мн.ч. повелительного, 'mesi' — инфинитивная форма."
+    },
+    {
+      "id": "A2-gram-030",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Kafe sinemanın karşı______________.",
+      "options": [
+        "karşında",
+        "karşısında",
+        "karşındaki",
+        "karşılarında"
+      ],
+      "correct": "karşısında",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "karşısında = 'напротив'. Послелог karşı с притяжательным 3 л. ед.ч. + местный: karşı + sı + nda. 'karşında' — неверная форма без притяжательного аффикса."
+    },
+    {
+      "id": "A2-gram-031",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Seni 3 yıl görmedim, çok büyü________________.",
+      "options": [
+        "büyüdü",
+        "büyümüş",
+        "büyümüşsün",
+        "büyüdümüş"
+      ],
+      "correct": "büyümüşsün",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Говорящий видит результат и выражает удивление/впечатление о человеке перед собой: büyümüşsün = 'ты вырос(ла)!' (эмоциональное -mIş 2 л. ед.ч.). 'büyümüş' — 3 л., не согласуется с 'seni'. 'büyüdümüş' — несуществующая форма."
+    },
+    {
+      "id": "A2-gram-032",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Benim daha çok çalış____ lazım.",
+      "options": [
+        "mak",
+        "maya",
+        "ır",
+        "mam"
+      ],
+      "correct": "mam",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Должествование с личным притяжательным: çalışmam lazım = 'мне нужно работать больше'. -mAsI lazım для 3 л., -mAm lazım для 1 л. (benim çalışmam lazım). Конструкция А2."
+    },
+    {
+      "id": "A2-gram-033",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sigara iç______ ne zaman bırakacaksın?",
+      "options": [
+        "içmeyi",
+        "içmeye",
+        "içmekten",
+        "içmek"
+      ],
+      "correct": "içmeyi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "bırakmak управляет -mAyI: içmeyi bırakmak = 'бросить курить'. Стандартная конструкция."
+    },
+    {
+      "id": "A2-gram-034",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "İsminizi soyadınızı alabilir______?",
+      "options": [
+        "misin",
+        "miyim",
+        "mi",
+        "misiniz"
+      ],
+      "correct": "misiniz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вежливое обращение 2 л. мн.ч.: alabilir misiniz? = 'Могу я узнать ваши имя и фамилию?' (форма вежливости). '-misiniz' соответствует 'siz' в широком/возможности."
+    },
+    {
+      "id": "A2-gram-035",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bana çay yap_______mısın?",
+      "options": [
+        "arım",
+        "tın",
+        "yor",
+        "ar"
+      ],
+      "correct": "ar",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вопрос строится как 'Bana çay yapar mısın?' = 'Сделаешь мне чай?' — широкое время в вопросе-просьбе. yapmak → yap + ar (широкое время, односложный корень). Вариант 'ar' даёт 'yapar mısın'. НО в исходнике стоит 'yap_______mısın' — пробел между аффиксом и 'mısın' нет разделителя. Требует проверки написания в оригинале. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-036",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sana yardım ed_____?",
+      "options": [
+        "yorum mu",
+        "eyim mi",
+        "er",
+        "mi"
+      ],
+      "correct": "eyim mi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Предложение помощи 1 л. ед.ч.: yardım edeyim mi? = 'Помочь тебе?' Желательное наклонение -(y)AyIm: etmek → edeyim (озвончение t→d). 'yorum mu' — 'я помогаю?', не предложение помочь."
+    },
+    {
+      "id": "A2-gram-037",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "İstanbul, dünyanın en güzel ________.",
+      "options": [
+        "şehir",
+        "şehre",
+        "şehri",
+        "şehirleri"
+      ],
+      "correct": "şehri",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Превосходная степень в изафетной конструкции: dünyanın en güzel şehri = 'самый красивый город мира'. Двухаффиксный изафет: şehir + i = şehri (притяжательный 3 л. после гласной)."
+    },
+    {
+      "id": "A2-gram-038",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu akşam Macdonald's söyle_______________?",
+      "options": [
+        "söylersin mi?",
+        "söylelim mi?",
+        "söyleyim mi?",
+        "söyleyelim mi?"
+      ],
+      "correct": "söyleyelim mi?",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Предложение вместе заказать/позвонить в Макдоналдс: söyleyelim mi? = 'Позвоним/закажем?' Желательное мн.ч. -(y)AlIm. 'söyleyim mi' — 1 л. ед.ч. (только я). Вопрос несколько неполный в формулировке — возможно, пропущено слово. Требует уточнения у Юли. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-039",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Benim sağ___________ hiçbir şey yok.",
+      "options": [
+        "sağında",
+        "sağımda",
+        "sağda",
+        "sağamda"
+      ],
+      "correct": "sağımda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "benim sağımda = 'справа от меня'. sağ + ım (1 л. притяжательный) + da (местный). 'sağında' — 'справа от него/неё' (3 л.)."
+    },
+    {
+      "id": "A2-gram-040",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Seni anla___________ çalışıyorum.",
+      "options": [
+        "anlamak",
+        "anlamayı",
+        "anlamaktan",
+        "anlamaya"
+      ],
+      "correct": "anlamaya",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "çalışmak управляет -mAyA: anlamaya çalışıyorum = 'стараюсь понять'. Стандартная конструкция А2."
+    },
+    {
+      "id": "A2-gram-041",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Kedi al___________ düşünüyoruz.",
+      "options": [
+        "maya",
+        "mayı",
+        "mak",
+        "maktan"
+      ],
+      "correct": "mayı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "düşünmek управляет -mAyI: almayı düşünüyoruz = 'думаем взять кошку'. Стандартная конструкция А2 (нумерация в исходнике: 49)."
+    },
+    {
+      "id": "A2-gram-042",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Hava çok soğuk. Dışarı çık_____________.",
+      "options": [
+        "çıkalım",
+        "çıkmalım",
+        "çıkmayalım",
+        "çıkar"
+      ],
+      "correct": "çıkmayalım",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Совет не выходить: çıkmayalım = 'давай не будем выходить'. Отрицательное желательное мн.ч. -(m)AyAlIm. Контекст: холодно → не выходи. Нумерация в исходнике: 50."
+    },
+    {
+      "id": "A2-gram-043",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bana bu gömleyi paketle______ mısınız? Hediye olacak.",
+      "options": [
+        "r",
+        "er",
+        "bilir",
+        "yor"
+      ],
+      "correct": "bilir",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вежливая просьба с возможностью: paketleyebilir misiniz? = 'Не могли бы вы упаковать?'. paketle + bilir → paketleyebilir. Нумерация в исходнике: 51."
+    },
+    {
+      "id": "A2-gram-044",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ev_______ telefon çalışmıyor.",
+      "options": [
+        "de",
+        "desi",
+        "deki",
+        "i"
+      ],
+      "correct": "deki",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Evdeki telefon = 'домашний телефон / телефон в доме'. -dAki (местный + ki образует прилагательное). Нумерация в исходнике: 52."
+    },
+    {
+      "id": "A2-gram-045",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Elektrikler yokken insanlar mum yak_______________.",
+      "options": [
+        "yaktılar",
+        "yaktıyordular",
+        "yakıyorlardı",
+        "yakmış"
+      ],
+      "correct": "yakıyorlardı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Прошедше-продолжительное: когда не было электричества, люди жгли свечи (регулярно). -yordu мн.ч.: yakıyorlardı. 'yaktılar' — однократное, 'yaktıyordular' — неверная форма. Нумерация в исходнике: 53."
+    },
+    {
+      "id": "A2-gram-046",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 3,
+      "type": "closed",
+      "question": "A: Arzu derse neden gelmemiş? B: Söylediğine göre dişi ağrı_________________ ve doktora git_________________.",
+      "options": [
+        "mıştı / mişti",
+        "yor / yormuş",
+        "yormuş / ecekmiş",
+        "ırmış / ermiş",
+        "dı / -ti"
+      ],
+      "correct": "yormuş / ecekmiş",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "söylediğine göre (по её словам) — маркер косвенных слов. Зуб болит (сейчас/тогда) → ağrıyormuş; пойдёт к врачу → gidecekmiş. Форма -yormuş + -ecekmiş. Это уже ближе к B1-сложности для двойного -mIş в одном предложении. Требует проверки у Юли. Нумерация в исходнике: 54. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-047",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Canlılar doğ_______________, büyü_______________, öl_______________.",
+      "options": [
+        "-ar / -r / -er",
+        "-ur / -er / -er",
+        "-ar / -r / -ür",
+        "-ar / -r / -r",
+        "-ur / -ür / -ür"
+      ],
+      "correct": "-ar / -r / -ür",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Широкое время (факты о мире): doğmak→doğar (согл.оконч., односложн.→-ar); büyümek→büyür (исключение в списке: büyür); ölmek→ölür (согл.оконч., односложн.→-er, НО ölür — ö→ür по гармонии). Нумерация в исходнике: 55."
+    },
+    {
+      "id": "A2-gram-048",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "A: Bana biraz borç verebilir misin? B: Kusura bakma, _______________.",
+      "options": [
+        "veremem",
+        "verebilirim",
+        "veremezdim",
+        "veririm",
+        "verebileceğim"
+      ],
+      "correct": "veremem",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Отказ: kusura bakma (извини) + veremem = 'не могу дать'. Отрицание возможности 1 л. ед.ч.: ver + -(e)me + m = veremem. Нумерация в исходнике: 56."
+    },
+    {
+      "id": "A2-gram-049",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 3,
+      "type": "closed",
+      "question": "A: Haftasonu işim var, alışverişi sen tek başına ___________? B: Tamam, yaparım ama kolum ağrıyor, poşetleri ___________.",
+      "options": [
+        "yapacak mısın / taşımam",
+        "yapar mısın / taşıyamadım",
+        "yapabilir misin / taşıyamam",
+        "yapmış mısın / taşımayabilirim",
+        "yapmamış mısın / taşıyamadım"
+      ],
+      "correct": "yapabilir misin / taşıyamam",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вежливая просьба: yapabilir misin? = 'Сможешь ли ты?'; колено болит → taşıyamam = 'не смогу нести'. yapabilir misin — возможность в вопросе; taşıyamam — отрицание возможности настоящего/общего. 'yapar mısın' тоже возможно для просьбы, но контекст с 'işim var' более вежлив. Нумерация в исходнике: 57. Требует проверки. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-gram-050",
+      "level": "A2",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Küçük oğlum evli, ama büyük oğlum hala ________________.",
+      "options": [
+        "evli",
+        "evsiz",
+        "bekar",
+        "bekar değil",
+        "evsiz değil"
+      ],
+      "correct": "bekar",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Лексика: младший женат (evli), а старший — hala (всё ещё) bekar = 'холостой/незамужем'. Антоним к evli = bekar. Нумерация в исходнике: 58."
+    },
+    {
+      "id": "A2-gram-051",
+      "level": "A2",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Duyduğuma göre Ayşe evlen_________________; eşi çok yakışıklı _________________.",
+      "options": [
+        "-mış / mış",
+        "-miş / -ymış",
+        "-ymiş / -ymış",
+        "-dı / ydı",
+        "-ecekti / yacaktı"
+      ],
+      "correct": "-miş / -ymış",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Duyduğuma göre (по тому, что слышала) — косвенная информация -mIş. evlenmek→evlenmiş; yakışıklı (именное сказуемое) + ymış = yakışıklıymış. Вариант 2: -miş / -ymış. НО вариант 3 '-ymiş / -ymış' отличается только начальной буквой (-y vs -m). Evlenmiş — основа оканчивается на согласную, поэтому -miş (не -ymiş). Нумерация в исходнике: 59. Требует проверки формата записи вариантов. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-read-001",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet Ankara'da yaşar. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Yanlış",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'Ben Konya'da yaşarım' — Мехмет живёт в Конье, не в Анкаре."
+    },
+    {
+      "id": "A2-read-002",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Konya Türkiye'nin en büyük şehridir. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Yanlış",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'en büyük şehirlerinden biri' — одна из крупнейших, не самая крупная."
+    },
+    {
+      "id": "A2-read-003",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet'in ağabeyi üniversitede okur. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Doğru",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'Ağabeyim buradaki üniversitede okur.'"
+    },
+    {
+      "id": "A2-read-004",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Evleri liseye yakındır. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Yanlış",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'liseye çok uzak' — далеко от школы."
+    },
+    {
+      "id": "A2-read-005",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet okula servis ile gider. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Doğru",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'ben okula servis ile giderim.'"
+    },
+    {
+      "id": "A2-read-006",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mahallelerinde park yoktur. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Yanlış",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'Mahallemizde büyük bir park var' — парк есть."
+    },
+    {
+      "id": "A2-read-007",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet arkadaşlarıyla parkta futbol oynar. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Doğru",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'Burada bazen futbol oynarız' — да, играет в футбол с друзьями."
+    },
+    {
+      "id": "A2-read-008",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Şehirde bisiklet yolları güvenlidir. (Верно/Неверно?)",
+      "options": [
+        "Doğru",
+        "Yanlış"
+      ],
+      "correct": "Doğru",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'buradaki bisiklet yolları çok güvenli.'"
+    },
+    {
+      "id": "A2-read-009",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Mehmet hangi şehirde yaşar?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Mehmet Konya'da yaşar.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "A2-read-010",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Şehirde hangi yerler var?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Şehirde birçok alışveriş merkezi, hastane, futbol sahası ve üniversite vardır.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "A2-read-011",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Mehmet neden okula servis ile gider?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Çünkü evi liseye çok uzaktır.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "A2-read-012",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Mehmet ve arkadaşları parkta ne yapar?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Parkta bazen futbol, bazen voleybol oynarlar.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "A2-read-013",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Mehmet akşamları kiminle bisiklet sürer?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Ağabeyi ile birlikte bisiklet sürer.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "A2-read-014",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Mehmet neden yaşadığı şehri sever?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Çünkü şehrinde alışveriş merkezi, hastane, üniversite, park ve bisiklet parkuru gibi imkânlar vardır ve güzel bir yer olduğunu düşünüyor.",
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "Текст прямо не объясняет причину любви к городу в одном месте — нужно обобщение. Открытый ответ, зачтётся любое связное обоснование по тексту. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A2-read-015",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Konya Türkiye'nin en büyük ______ biri. (Заполните пропуск)",
+      "options": [
+        "şehirlerinden",
+        "şehirinden",
+        "şehirleri",
+        "şehirler"
+      ],
+      "correct": "şehirlerinden",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "Конструкция 'en büyük X + -lArIn + -DAn biri' = 'один из крупнейших X'. şehirlerinden = şehir + ler + in + den."
+    },
+    {
+      "id": "A2-read-016",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet okula servis ile ______. (Заполните пропуск)",
+      "options": [
+        "gider",
+        "gidiyor",
+        "gitti",
+        "gitmiş"
+      ],
+      "correct": "gider",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте широкое время: giderim → при заполнении пропуска 3 л. ед.ч. = gider."
+    },
+    {
+      "id": "A2-read-017",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mahallelerinde büyük bir ______ var. (Заполните пропуск)",
+      "options": [
+        "park",
+        "hastane",
+        "lise",
+        "market"
+      ],
+      "correct": "park",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: 'Mahallemizde büyük bir park var.'"
+    },
+    {
+      "id": "A2-read-018",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mehmet arkadaşlarıyla futbol ve voleybol ______. (Заполните пропуск)",
+      "options": [
+        "oynar",
+        "oynuyor",
+        "oynadı",
+        "oynarmış"
+      ],
+      "correct": "oynar",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте широкое время: oynarız → 3 л. ед.ч. при пересказе = oynar."
+    },
+    {
+      "id": "A2-read-019",
+      "level": "A2",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Akşamları ağabeyi ile birlikte bisiklet ______. (Заполните пропуск)",
+      "options": [
+        "sürer",
+        "sürüyor",
+        "sürdü",
+        "sürmüş"
+      ],
+      "correct": "sürer",
+      "expected_answer": null,
+      "passage_id": "A2-read-text-1",
+      "confidence": "high",
+      "note": "В тексте широкое время: çıkarız / sürmek → sürer в пересказе."
+    },
+    {
+      "id": "A2-write-001",
+      "level": "A2",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Erkekler ve kadınlar aynı işleri yapabilir mi? (3-5 предложений)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема письма: равенство полов. Оценивается: широкое время, конструкции с -mAyA/-mAyI, аффикс -lI/-SIZ, связность."
+    },
+    {
+      "id": "A2-write-002",
+      "level": "A2",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Nasıl ödeme yapmayı tercih ediyorsunuz? (taksit…) (3-5 предложений)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема письма: способ оплаты. Оценивается: широкое время, -mAyI tercih etmek, словарный запас по теме покупок."
+    },
+    {
+      "id": "A2-write-003",
+      "level": "A2",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Türk yemeklerini sever misiniz? Neden? (3-5 предложений)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема письма: турецкая кухня. Оценивается: аффикс -lI (lezzetli, baharatlı), широкое время, аргументация."
+    },
+    {
+      "id": "A2-speak-001",
+      "level": "A2",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Çocukken ne yapmayı seviyordunuz? (3-5 предложений, аудио)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема говорения: детство. Оценивается: прошедше-продолжительное -yordu, -mAyI sevmek, связность и произношение."
+    },
+    {
+      "id": "A2-speak-002",
+      "level": "A2",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "En son hangi dedikoduyu duydunuz? (3-5 предложений, аудио)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема говорения: сплетни/новости. Оценивается: -mIş (косвенное прошлое), -yormuş, -ecekmiş, разнообразие форм."
+    },
+    {
+      "id": "A2-speak-003",
+      "level": "A2",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Online ve offline alışverişin karşılaştırması. (3-5 предложений, аудио)",
+      "options": [],
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Тема говорения: сравнение видов покупок. Оценивается: конструкции сравнения -DAn daha / kadar, широкое время, аргументация."
+    },
+    {
+      "id": "A2-listen-001",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Dedesi bahçede çalışıyordu. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "A2-listen-002",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Hava soğukken nehre gidiyorlardı ve orada yüzüyorlardı. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "A2-listen-003",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Anneanne yağmurlu günlerde masal anlatıyordu. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "A2-listen-004",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Yazar köyü hiç özlemiyordu. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "A2-listen-005",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Yazar yaz tatillerinde nereye gidiyordu?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Köydeki babaanne ve dedesinin yanına (в деревню к бабушке и дедушке).",
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "A2-listen-006",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Dedesi ona neler anlatıyordu?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Eski günlerden bahsediyordu (рассказывал о прошлом / старых временах).",
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "A2-listen-007",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Yazar neden mutfaktaki ortamı seviyordu?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Çünkü herkes birlikte vakit geçiriyordu (все вместе проводили время, тёплая атмосфера).",
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "A2-listen-008",
+      "level": "A2",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Çocuklar sıcak havalarda ne yapıyordu?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Nehre gidip yüzüyorlardı / sahilde oynuyorlardı (ходили на реку купаться, играли).",
+      "passage_id": "A2-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    }
+  ]
+}

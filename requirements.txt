@@ -1,0 +1,11 @@
+# Зависимости сервера (для деплоя). Расшифровка и оценка — через OpenAI API,
+# поэтому тяжёлые локальные модели тут НЕ нужны.
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.18
+pydantic==2.10.4
+pydantic-settings==2.7.1
+eval-type-backport==0.2.2
+email-validator==2.2.0
+structlog==24.4.0
+openai==1.59.6

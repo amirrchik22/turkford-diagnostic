@@ -1,0 +1,1134 @@
+{
+  "level": "B1",
+  "passages": [
+    {
+      "id": "B1-read-text-1",
+      "skill": "reading",
+      "text": "Ayşe üç yıl önce üniversiteden mezun oldu. Üniversitede grafik tasarım okudu ama mezun olduktan sonra uzun süre iş bulamadı. Birkaç şirkete başvurduğu halde olumlu cevap alamadı. Bu yüzden bir süre kafede çalışmak zorunda kaldı. O dönemde hem çok yoruluyordu hem de kendi alanında çalışamadığı için mutsuz hissediyordu.\n\nBir gün yakın arkadaşı ona sosyal medya üzerinden küçük işletmeler için tasarımlar yapmasını önerdi. Ayşe önce bu fikre pek güvenmedi çünkü yeterince deneyimi olmadığını düşünüyordu. Yine de denemeye karar verdi. Evde çalışarak küçük kafeler ve mağazalar için logo hazırlamaya başladı. Hazırladığı tasarımlar insanlar tarafından beğenilince müşteri sayısı yavaş yavaş arttı.\n\nŞimdi Ayşe kendi işini yapıyor ve istediği yerden çalışabiliyor. Sabah erken kalkmak zorunda olmadığı için daha mutlu olduğunu söylüyor. Ayrıca boş zamanlarında spor yapmaya ve kitap okumaya da vakit bulabiliyor. Ayşe'ye göre insan bazen başarılı olmak için risk almak zorunda kalıyor."
+    },
+    {
+      "id": "B1-listen-text-1",
+      "skill": "listening",
+      "text": "Günümüzde sosyal medya insanların hayatında çok önemli bir yere sahip. İnsanlar sosyal medya sayesinde arkadaşlarıyla iletişim kurabiliyor, haberleri takip edebiliyor ve farklı konular hakkında bilgi edinebiliyor. Özellikle gençler gün içinde sosyal medyada çok fazla zaman geçiriyor. Sosyal medyanın birçok olumlu yönü vardır. Örneğin insanlar uzakta yaşayan akrabalarıyla kolayca konuşabiliyor ve eski arkadaşlarını bulabiliyor. Ayrıca öğrenciler eğitimle ilgili videolar izleyerek yeni bilgiler öğrenebiliyor. Küçük işletmeler de ürünlerini tanıtmak için sosyal medyayı aktif bir şekilde kullanıyor. Bununla birlikte sosyal medyanın bazı olumsuz etkileri de vardır. Bazı insanlar sosyal medyada çok fazla vakit geçirdiği için derslerine veya işine yeterince dikkat edemiyor. Ayrıca insanlar bazen sosyal medyada gördükleri hayatları gerçek sanıyor ve kendilerini mutsuz hissedebiliyor. Özellikle çocukların ve gençlerin interneti bilinçli kullanması çok önemlidir. Bence sosyal medya tamamen kötü değildir. Önemli olan onu doğru ve dengeli bir şekilde kullanmaktır. İnsanlar sosyal medyada geçirdikleri zamanı kontrol ederse hem faydalı bilgiler öğrenebilir hem de gerçek hayattaki ilişkilerini koruyabilir."
+    }
+  ],
+  "questions": [
+    {
+      "id": "B1-gram-001",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Yarın erken kalkmam ______.",
+      "options": [
+        "zorunda",
+        "gerek",
+        "mecburda",
+        "lazımım"
+      ],
+      "correct": "gerek",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "gerek — единственный вариант, который грамматически сочетается с инфинитивом на -mam без вспомогательного olmak. zorunda требует olmak, mecburda — не существует, lazımım — неверная форма."
+    },
+    {
+      "id": "B1-gram-002",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu raporu bugün bitirmeliydin. Как переводится это предложение?",
+      "options": [
+        "Ты должен закончить отчет сегодня.",
+        "Ты заканчиваешь отчет сегодня.",
+        "Тебе следовало закончить отчет сегодня.",
+        "Ты закончишь отчет сегодня."
+      ],
+      "correct": "Тебе следовало закончить отчет сегодня.",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-meliydin = -meli (долженствование) + -ydi (прошедшее), значение: следовало (но не сделал). Именно вариант C."
+    },
+    {
+      "id": "B1-gram-003",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ali işe gitmek ______ kaldı.",
+      "options": [
+        "gerek",
+        "lazımdı",
+        "zorunda",
+        "mecburdu"
+      ],
+      "correct": "zorunda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Конструкция zorunda kalmak = быть вынужденным. Ali işe gitmek zorunda kaldı = Али был вынужден идти на работу. mecburdu не строится с инфинитивом, gerek/lazımdı требуют другой конструкции."
+    },
+    {
+      "id": "B1-gram-004",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Doktora gitmen gerekiyor. Как переводится это предложение?",
+      "options": [
+        "Ты идешь к врачу.",
+        "Тебе нужно пойти к врачу.",
+        "Ты ходил к врачу.",
+        "Ты пойдешь к врачу завтра."
+      ],
+      "correct": "Тебе нужно пойти к врачу.",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "gitmen gerekiyor = твоё хождение необходимо = тебе нужно пойти. Конструкция инфинитив (-men) + gerekiyor."
+    },
+    {
+      "id": "B1-gram-005",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Eşimle 2022 _______________ evliyiz.",
+      "options": [
+        "yıldan beri",
+        "yıldır",
+        "yıllardır",
+        "yılından beri"
+      ],
+      "correct": "yılından beri",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "После конкретного года с притяжательным суффиксом: 2022 yılından beri — стандартная форма. yıldır без указания точного года звучит менее естественно. yıllardır = уже много лет (без точной даты). Confidence medium: оба варианта A и D возможны, D предпочтителен. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "B1-gram-006",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Tatile _________ ama paramız yetmedi.",
+      "options": [
+        "Çıkıyorduk",
+        "Çıkardık",
+        "Çıkacaktık",
+        "Çıkacağız"
+      ],
+      "correct": "Çıkacaktık",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-acaktık = будущее в прошедшем (собирались, планировали, но не вышло). Противопоставление с «ama» подтверждает: собирались, но денег не хватило."
+    },
+    {
+      "id": "B1-gram-007",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Çocukken her yaz köye _______.",
+      "options": [
+        "Gidecektik",
+        "Giderdik",
+        "Gittiğimiz",
+        "Gidiyormuş"
+      ],
+      "correct": "Giderdik",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Çocukken + her yaz = повторяющееся действие в прошлом → широкое прошедшее -rdı (Giderdik). Классический контекст для -Ar/-Ir + -dı."
+    },
+    {
+      "id": "B1-gram-008",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sabah kahve içtim ve işe gittim. На что можно заменить «ve»?",
+      "options": [
+        "içerek",
+        "içip",
+        "içmeden",
+        "içe içe"
+      ],
+      "correct": "içip",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Деепричастие -ip заменяет «и» при перечислении последовательных действий одного субъекта: kahve içip işe gittim. -erek выражает «посредством/продолжая», içmeden = без, içe içe = продолжая пить."
+    },
+    {
+      "id": "B1-gram-009",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ders ________ sınavı geçti.",
+      "options": [
+        "çalışarak",
+        "çalışıp",
+        "çalıştığı",
+        "çalışacak"
+      ],
+      "correct": "çalışarak",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-arak = деепричастие образа действия: сдал экзамен, занимаясь / с помощью занятий. çalışıp возможно только при перечислении с другим действием того же субъекта."
+    },
+    {
+      "id": "B1-gram-010",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sınıfa _____ kız benim arkadaşım. Какое причастие использовано?",
+      "options": [
+        "Girdiği",
+        "Giren",
+        "Gireceği",
+        "Girerek"
+      ],
+      "correct": "Giren",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Действительное причастие -AN/EN: девочка, которая входит (обычное/актуальное действие). Girdiği = которая вошла (прошлое, страдательное), Gireceği = которая войдёт, Girerek = деепричастие."
+    },
+    {
+      "id": "B1-gram-011",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "_______ kitap çok ilginçti.",
+      "options": [
+        "Okuduğum",
+        "Okuyacağım",
+        "Okuyan",
+        "Okuyacak"
+      ],
+      "correct": "Okuduğum",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Книга, которую я прочитал = страдательное причастие прошлого с притяжательным -DIĞI+m: Okuduğum kitap. Okuyan = который читает (действительное, без субъекта-«я»)."
+    },
+    {
+      "id": "B1-gram-012",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Yarın ________ misafirler için yemek hazırlıyoruz.",
+      "options": [
+        "gelen",
+        "geldiği",
+        "gelecek",
+        "gelmek"
+      ],
+      "correct": "gelecek",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Гости, которые придут завтра = действительное причастие будущего -ACAK: gelecek misafirler. yarın подтверждает будущее время."
+    },
+    {
+      "id": "B1-gram-013",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ben eve __________ herkes uyuyordu.",
+      "options": [
+        "geleceğim zaman",
+        "geldiğim için",
+        "geldiğim zaman",
+        "geldiği zaman"
+      ],
+      "correct": "geldiğim zaman",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Когда я пришел домой = -DIĞI ZAMAN с притяжательным 1л.ед.: geldiğim zaman. geldiği zaman = когда он/она пришёл, geldiğim için = потому что я пришёл."
+    },
+    {
+      "id": "B1-gram-014",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Onu görmediğim için üzgünüm. Как переводится?",
+      "options": [
+        "Когда я его увидел",
+        "Если я его не увижу",
+        "Потому что я его не видел",
+        "Хотя я его видел"
+      ],
+      "correct": "Потому что я его не видел",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-DIĞI İÇİN = потому что (я). görmediğim = отрицательная форма. Значение причины."
+    },
+    {
+      "id": "B1-gram-015",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sağlıklı yaşamak için düzenli spor yapmak ______.",
+      "options": [
+        "yasak",
+        "önemli",
+        "mecbur",
+        "hazır"
+      ],
+      "correct": "önemli",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Для здорового образа жизни важно регулярно заниматься спортом = önemli. yasak = запрещено, mecbur = обязан (требует субъекта), hazır = готов."
+    },
+    {
+      "id": "B1-gram-016",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Senin yardımın sayesinde işi bitirdik. Как переводится «sayesinde»?",
+      "options": [
+        "Из-за твоей помощи",
+        "Благодаря твоей помощи",
+        "Против твоей помощи",
+        "Вместо твоей помощи"
+      ],
+      "correct": "Благодаря твоей помощи",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "SAYESİNDE = благодаря (позитивная причина). Противопоставлен yüzünden (негативная)."
+    },
+    {
+      "id": "B1-gram-017",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Yağmur yüzünden dışarı çıkmadık. Как переводится «yüzünden»?",
+      "options": [
+        "Благодаря дождю",
+        "Несмотря на дождь",
+        "Из-за дождя",
+        "После дождя"
+      ],
+      "correct": "Из-за дождя",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "YÜZÜNDEN = из-за (негативная причина). Классическая пара с sayesinde на уровне B1."
+    },
+    {
+      "id": "B1-gram-018",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Annem \"erken gel\" _____ beni aradı.",
+      "options": [
+        "karşı",
+        "dair",
+        "rağmen",
+        "diye"
+      ],
+      "correct": "diye",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "DİYE = «говоря/чтобы» при передаче прямой речи или цели. «erken gel diye aradı» = позвонила, говоря «приходи раньше»."
+    },
+    {
+      "id": "B1-gram-019",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 3,
+      "type": "closed",
+      "question": "Yeni araba ______ çok sevindim.",
+      "options": [
+        "almanızı",
+        "almanızdan",
+        "almanıza",
+        "aldınız"
+      ],
+      "correct": "almanıza",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "sevindim + dative (-(n)A): sevinmek управляет дательным падежом. almanıza = вашей покупке (инфинитив + притяж. + дат.). Confidence medium: almanızdan (исходный) иногда встречается в разговорной речи, стоит проверить с Юлей. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "B1-gram-020",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu konuda seninle aynı fikirde değilim, sana ______.",
+      "options": [
+        "aitim",
+        "dairim",
+        "doğruyum",
+        "karşıyım"
+      ],
+      "correct": "karşıyım",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "karşı olmak = быть против. «sana karşıyım» = я против тебя (в этом вопросе). Контекст «не согласен» подтверждает."
+    },
+    {
+      "id": "B1-gram-021",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bana doğru koşuyordu. Как переводится «doğru»?",
+      "options": [
+        "Против меня",
+        "Обо мне",
+        "По направлению ко мне",
+        "Вместо меня"
+      ],
+      "correct": "По направлению ко мне",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "DOĞRU = по направлению к (послелог с дательным). Bana doğru = по направлению ко мне."
+    },
+    {
+      "id": "B1-gram-022",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu kitap tarih hakkında / tarihe ______ bir kitap.",
+      "options": [
+        "karşı",
+        "doğru",
+        "rağmen",
+        "dair"
+      ],
+      "correct": "dair",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "DAİR = касающийся, о (содержательная связь с темой). Эквивалент hakkında. «tarihe dair bir kitap» = книга об истории."
+    },
+    {
+      "id": "B1-gram-023",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "________ kafede yemek yiyebiliriz.",
+      "options": [
+        "Açsın",
+        "Aç değilsen",
+        "Açsan",
+        "Açız"
+      ],
+      "correct": "Açsan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Условное наклонение -sA: Açsan = если ты голоден. Açsın = пусть будет голодным (желательное), Açız = мы голодны (утверждение)."
+    },
+    {
+      "id": "B1-gram-024",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Eğer erken _________ seni beklerim.",
+      "options": [
+        "geldiysen",
+        "gelirsen",
+        "gelecektin",
+        "gelmiştin"
+      ],
+      "correct": "gelirsen",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Условное с eğer для реального будущего = -ARSA/-IRSE: gelirsen = если придёшь. geldiysen = если пришёл (прошлое условие)."
+    },
+    {
+      "id": "B1-gram-025",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bu proje çevreyle _________.",
+      "options": [
+        "rağmen",
+        "karşı",
+        "ilgili",
+        "doğru"
+      ],
+      "correct": "ilgili",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ile ilgili = связанный с, касающийся. çevreyle ilgili = связанный с окружающей средой."
+    },
+    {
+      "id": "B1-gram-026",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "_________ yeni bir telefon aldım.",
+      "options": [
+        "Birbirimize",
+        "Kendime",
+        "Kendisine",
+        "Kendini"
+      ],
+      "correct": "Kendime",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Kendime = себе (для себя, 1л.ед.). Возвратное местоимение kendi + дательный 1л.ед."
+    },
+    {
+      "id": "B1-gram-027",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Onlar yıllardır ________ tanıyorlar.",
+      "options": [
+        "kendilerini",
+        "birbirlerini",
+        "kendisini",
+        "birbirimizi"
+      ],
+      "correct": "birbirlerini",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Взаимное местоимение birbirleri + винительный = birbirlerini. Они знают друг друга. birbirimizi = мы знаем друг друга."
+    },
+    {
+      "id": "B1-gram-028",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Çocuklar kendi aralarında konuşuyorlardı. Как переводится «kendi aralarında»?",
+      "options": [
+        "друг друга",
+        "между собой",
+        "ради себя",
+        "из-за себя"
+      ],
+      "correct": "между собой",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "kendi aralarında = буквально «в своём среди» = между собой. Идиоматическое выражение B1."
+    },
+    {
+      "id": "B1-gram-029",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ders _________ sınavı geçemezsin.",
+      "options": [
+        "çalışan",
+        "çalışıp",
+        "çalışmadan",
+        "çalışarak"
+      ],
+      "correct": "çalışmadan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-madan = деепричастие отрицания: без занятий. Без занятий экзамен не сдашь. Ср. с Q9: там çalışarak (благодаря занятиям сдал)."
+    },
+    {
+      "id": "B1-gram-030",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 3,
+      "type": "closed",
+      "question": "Haftaya ________ ev çok büyük.",
+      "options": [
+        "taşınan",
+        "taşındığımız",
+        "taşınacağımız",
+        "taşınmak"
+      ],
+      "correct": "taşınacağımız",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Дом, в который мы переедем на следующей неделе = страдательное причастие будущего с притяжательным: -ACAĞI+mız. haftaya подтверждает будущее."
+    },
+    {
+      "id": "B1-gram-031",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Beni aradığını bilmiyordum. Как переводится?",
+      "options": [
+        "Ты меня ищешь",
+        "Я не знал, что ты мне звонил",
+        "Я знал, что ты звонишь",
+        "Ты не знал, что я звонил"
+      ],
+      "correct": "Я не знал, что ты мне звонил",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "bilmiyordum = не знал; aradığını = что ты звонил (страдательное причастие + вин.падеж). beni = мне (ты мне звонил). Вариант B."
+    },
+    {
+      "id": "B1-gram-032",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Dışarı çıkacaktım ama yağmur başladı. Как переводится?",
+      "options": [
+        "Я выхожу на улицу",
+        "Я собирался выйти на улицу",
+        "Я вышел на улицу",
+        "Я выйду на улицу"
+      ],
+      "correct": "Я собирался выйти на улицу",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-acaktım = будущее в прошедшем = собирался/планировал, но не вышло. ama (но) подтверждает нереализованное намерение."
+    },
+    {
+      "id": "B1-gram-033",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Beni dinlemediğin için kızdım. Как переводится?",
+      "options": [
+        "Когда ты меня слушал",
+        "Хотя ты меня не слушал",
+        "Потому что ты меня не слушал",
+        "Если ты меня не послушаешь"
+      ],
+      "correct": "Потому что ты меня не слушал",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "-DIĞI İÇİN = потому что (ты). dinlemediğin = не слушал (отрицание). Причина злости."
+    },
+    {
+      "id": "B1-gram-034",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Toplantıya katılmak _______ değiliz.",
+      "options": [
+        "mecbur",
+        "zorunda",
+        "gerek",
+        "lazım"
+      ],
+      "correct": "zorunda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "zorunda değiliz = мы не обязаны. mecbur değiliz — грамматически тоже возможно, но zorunda — более распространённая конструкция в современном турецком для B1."
+    },
+    {
+      "id": "B1-gram-035",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sana mesaj attım diye bana kızdı. Как переводится «diye»?",
+      "options": [
+        "Когда я написал сообщение",
+        "Из-за того что я написал сообщение",
+        "Чтобы я написал сообщение",
+        "Несмотря на сообщение"
+      ],
+      "correct": "Из-за того что я написал сообщение",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "DİYE здесь = из-за того что / за то что (причина с оттенком упрёка). Он разозлился из-за того что я написал."
+    },
+    {
+      "id": "B1-gram-036",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bana ait olmayan eşyaları kullanmam.",
+      "options": [
+        "karşı",
+        "rağmen",
+        "doğru",
+        "ait"
+      ],
+      "correct": "ait",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "AİT = принадлежащий. bana ait = мой, принадлежащий мне. Конструкция с дательным."
+    },
+    {
+      "id": "B1-gram-037",
+      "level": "B1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "İnternette çok zaman ________ gözlerin yorulabilir.",
+      "options": [
+        "geçirdiği",
+        "geçersek",
+        "geçirirsen",
+        "geçirerek"
+      ],
+      "correct": "geçirirsen",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Условное: если проводишь много времени в интернете, глаза могут устать = -ARSA (geçirirsen). Логика «если → то»."
+    },
+    {
+      "id": "B1-read-001",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ayşe üniversitede mühendislik okudu. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Неверно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: grafik tasarım okudu — графический дизайн, не инженерия."
+    },
+    {
+      "id": "B1-read-002",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mezun olduktan sonra hemen iş buldu. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Неверно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: uzun süre iş bulamadı — долго не могла найти работу."
+    },
+    {
+      "id": "B1-read-003",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bir süre kafede çalıştı. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Верно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте прямо: bir süre kafede çalışmak zorunda kaldı."
+    },
+    {
+      "id": "B1-read-004",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Arkadaşı ona yeni bir fikir verdi. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Верно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: yakın arkadaşı ona sosyal medya üzerinden küçük işletmeler için tasarımlar yapmasını önerdi."
+    },
+    {
+      "id": "B1-read-005",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ayşe başından beri kendine çok güveniyordu. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Неверно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: Ayşe önce bu fikre pek güvenmedi — сначала не доверяла этой идее."
+    },
+    {
+      "id": "B1-read-006",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "İnsanlar onun tasarımlarını beğendi. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Верно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: Hazırladığı tasarımlar insanlar tarafından beğenilince — когда её дизайны понравились людям."
+    },
+    {
+      "id": "B1-read-007",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Şimdi Ayşe bir ofiste çalışıyor. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Неверно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: kendi işini yapıyor ve istediği yerden çalışabiliyor — работает на себя откуда хочет."
+    },
+    {
+      "id": "B1-read-008",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ayşe boş zamanlarında spor yapıyor. (Верно/Неверно?)",
+      "options": [
+        "Верно",
+        "Неверно"
+      ],
+      "correct": "Верно",
+      "expected_answer": null,
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: boş zamanlarında spor yapmaya ve kitap okumaya da vakit bulabiliyor."
+    },
+    {
+      "id": "B1-read-009",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Ayşe neden mutsuz hissediyordu?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Kendi alanında çalışamadığı için mutsuz hissediyordu. (Потому что не могла работать по своей специальности / в своей области.)",
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "Ответ прямо в тексте: hem çok yoruluyordu hem de kendi alanında çalışamadığı için mutsuz hissediyordu."
+    },
+    {
+      "id": "B1-read-010",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Arkadaşı ona ne önerdi?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Sosyal medya üzerinden küçük işletmeler için tasarımlar yapmasını önerdi. (Предложил делать дизайны для малого бизнеса через соцсети.)",
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "Прямой ответ из второго абзаца текста."
+    },
+    {
+      "id": "B1-read-011",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Ayşe ilk başta neden emin değildi?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Yeterince deneyimi olmadığını düşündüğü için emin değildi. (Считала, что у неё недостаточно опыта.)",
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "Из текста: yeterince deneyimi olmadığını düşünüyordu."
+    },
+    {
+      "id": "B1-read-012",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Ayşe kimler için tasarım yapmaya başladı?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Küçük kafeler ve mağazalar için logo hazırlamaya başladı. (Стала делать логотипы для небольших кафе и магазинов.)",
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "Прямой ответ из текста."
+    },
+    {
+      "id": "B1-read-013",
+      "level": "B1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Şimdi neden daha mutlu olduğunu söylüyor?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Sabah erken kalkmak zorunda olmadığı için daha mutlu olduğunu söylüyor. (Говорит, что счастливее, потому что не обязана вставать рано утром.)",
+      "passage_id": "B1-read-text-1",
+      "confidence": "high",
+      "note": "Прямой ответ из третьего абзаца."
+    },
+    {
+      "id": "B1-write-001",
+      "level": "B1",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для сочинения (3–5 предложений): Modayı takip eder mısınız? (Следите ли вы за модой?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Свободный ответ от 3 до 5 предложений на турецком. Ожидается: использование geniş zaman (-ar/-er), конструкций ilgili/ile ilgili, причастий и/или условных конструкций уровня B1, связный текст с выражением личного мнения.",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается: грамматическая корректность, объём, связность, использование лексики уровня B1 (tema: moda, giyim, stil)."
+    },
+    {
+      "id": "B1-write-002",
+      "level": "B1",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для сочинения (3–5 предложений): Sizce gelecekte hangi meslekler yok olacak? (Какие профессии, по-вашему, исчезнут в будущем?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Свободный ответ от 3 до 5 предложений. Ожидается: -acak (будущее время), причастия (-an/-acak), конструкция «bence/sizce», развёрнутое мнение.",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается: будущее время -acak, аргументация, лексика (meslek, teknoloji, yapay zeka)."
+    },
+    {
+      "id": "B1-write-003",
+      "level": "B1",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для сочинения (3–5 предложений): Sağlıklı yaşamak zor mu? (Трудно ли жить здорово?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Свободный ответ от 3 до 5 предложений. Ожидается: конструкции должествования (gerek, lazım, zorunda), деепричастия (-arak, -madan), причинные конструкции (için, -dığı için).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается: владение темой sağlıklı yaşam (B1), грамматические конструкции уровня."
+    },
+    {
+      "id": "B1-speak-001",
+      "level": "B1",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для монолога (аудио, 3–5 предложений): Sosyal medya hesabınız var mı? (Есть ли у вас аккаунты в соцсетях?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Устный ответ 3–5 предложений. Ожидается: geniş zaman, причастия, конструкции ilgili/dair, лексика темы sosiyal medya/telefon (B1).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается через Whisper: беглость, произношение, грамматика уровня B1."
+    },
+    {
+      "id": "B1-speak-002",
+      "level": "B1",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для монолога (аудио, 3–5 предложений): En son ne zaman tatile gittiniz? (Когда вы последний раз ездили в отпуск?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Устный ответ 3–5 предложений. Ожидается: прошедшее время -dı, деепричастия, временные конструкции -dığı zaman/-dığından beri, лексика путешествий.",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается через Whisper: прошедшее время, связность нарратива."
+    },
+    {
+      "id": "B1-speak-003",
+      "level": "B1",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Тема для монолога (аудио, 3–5 предложений): Online mi offline mi okumak daha iyi? (Читать онлайн или офлайн — что лучше?)",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Устный ответ 3–5 предложений. Ожидается: сравнительная степень (daha…/en…), конструкции bence/göre, аргументация с -dığı için/-madan.",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Оценивается через Whisper: сравнение, выражение мнения, лексика уровня B1."
+    },
+    {
+      "id": "B1-listen-001",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "İnsanlar sosyal medya sayesinde yalnızca haberleri takip edebilir. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "B1-listen-002",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Gençler gün içinde sosyal medyada çok zaman geçiriyor. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "B1-listen-003",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sosyal medyanın hiç olumsuz etkisi yoktur. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "B1-listen-004",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sosyal medya dengeli kullanılırsa faydalı olabilir. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "ответ от Юли (новые вопросы, совпадают с аудио)"
+    },
+    {
+      "id": "B1-listen-005",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "İnsanlar sosyal medya sayesinde hangi bilgileri takip edebiliyor?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Haberleri ve farklı konular hakkında bilgileri (новости и информацию по разным темам); общаются с друзьями.",
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "B1-listen-006",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Sosyal medyanın iki olumlu yönünü yazın.",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Любые два: общение с далёкими родственниками / поиск старых друзей; обучающие видео для студентов; продвижение товаров малым бизнесом.",
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "B1-listen-007",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Küçük işletmeler sosyal medyayı neden kullanıyor?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Ürünlerini tanıtmak için (чтобы рекламировать/продвигать свои товары).",
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    },
+    {
+      "id": "B1-listen-008",
+      "level": "B1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Çocukların ve gençlerin interneti nasıl kullanması gerekir?",
+      "options": [],
+      "correct": null,
+      "expected_answer": "Bilinçli, doğru ve dengeli (осознанно, правильно и сбалансированно).",
+      "passage_id": "B1-listen-text-1",
+      "confidence": "high",
+      "note": "эталон выведен из текста аудио (новые вопросы от Юли)"
+    }
+  ]
+}

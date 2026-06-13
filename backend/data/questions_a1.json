@@ -1,0 +1,1504 @@
+{
+  "level": "A1",
+  "passages": [
+    {
+      "id": "A1-read-text-1",
+      "skill": "reading",
+      "text": "Benim adım Ahmet. Ben 29 Ağustos 1984'te Ankara'da doğdum. Benim burcum başak, hobilerim futbol oynamak, resim yapmak. Ben otuz yaşındayım. Ben öğretmenim. Benim boyum bir metre seksen beş santimetre, kilom doksan, gözlerimin rengi kahverengi, saçlarım siyah aynı zamanda uzun, benim bıyıklarım da var, bıyıklarım ince.\n\nBen evliyim. Benim eşimin adı Gönül. Gönül yirmi beş yaşında. O da öğretmen. O da uzun boylu, esmer, gözleri mavi, onun boyu bir metre yetmiş beş santimetre.\n\nBenim babamın adı Hüseyin. Babam fabrikada çalışıyor, o mühendis ve elli beş yaşında. Benim annemin adı Ayşe, annem ev hanımı ve elli yaşında. Benim üç kardeşim var.\n\nEn büyük kardeşim Mustafa, o otuz beş yaşında, onun kafesi var ve orada çalışıyor. En küçük kardeşim Tuğba, o on sekiz yaşında. Tuğba lisede okuyor. Ortanca kardeşim Salih. Salih yirmi bir yaşında ve o üniversitede okuyor. Salih çok yakışıklı bir çocuk. Tuğba da çok güzel bir kız, Mustafa da çok çalışkan bir insan.\n\nBizim evimiz İzmir'de. İzmir'de dört milyon insan yaşıyor. Bizim evimiz çok büyük değil. Evimizde üç oda, mutfak, banyo ve tuvalet var. Salon çok geniş. Salonun karşısında yatak odası var. Yatak odası geniş değil ama güzel.\n\nEvimizin önünde bir bahçe var, bahçenin ortasında elma ağacı var, garaj evimizin arkasında, garajda benim motosikletim ve babamın arabası var, bizim köpeğimiz de var. Onun adı Fındık. Fındık kurt köpeği, o çok şirin ve hareketli.\n\nİşte benim ailem, ben ailemi çok seviyorum."
+    },
+    {
+      "id": "A1-read-text-2",
+      "skill": "reading",
+      "text": "Bu kasabayı seviyorum, her gün aynı sokakları, aynı insanları, aynı dükkanları görmek bile sıkıcı, ama bana güven veriyor. Çünkü buranın insanları gerçekten çok sıcakkanlı ve yardımsever."
+    }
+  ],
+  "questions": [
+    {
+      "id": "A1-gram-001",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bu kalem ________________?",
+      "options": [
+        "mü",
+        "mı",
+        "mu",
+        "mi"
+      ],
+      "correct": "mi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "kalem → последняя гласная e (мягкий ряд) → вопросительная частица mi (малая гармония гласных: e,i,ö,ü → mi). Правильный ответ mi. Confidence medium: вопрос в исходнике сформулирован незаконченно («Bu kalem ____?») — неясно, чего именно не хватает (вопросительной частицы mi или чего-то другого). Требует уточнения у Юли. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-gram-002",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Kitaplar nerede? *",
+      "options": [
+        "Kiatplıkda",
+        "Kitaplıkde",
+        "Kitaplıkta",
+        "Kitaplıkte"
+      ],
+      "correct": "Kitaplıkta",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "kitaplık → последняя буква k (глухая, входит в FıSTıKÇı ŞaHaP) → аффикс местного падежа -ta (не -da). Последняя гласная ı (твёрдая) → -ta. Итог: Kitaplıkta."
+    },
+    {
+      "id": "A1-gram-003",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Okulda çok ________ var.",
+      "options": [
+        "çocuklar",
+        "çocuk",
+        "çocukler"
+      ],
+      "correct": "çocuk",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "После числительного 'çok' (много) существительное стоит в единственном числе без -lAr: çok çocuk var (не çocuklar). Базовое правило А1: после количественных слов мн.ч. не ставится."
+    },
+    {
+      "id": "A1-gram-004",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Siz____ kaç kardeş____ var?",
+      "options": [
+        "-in / -i",
+        "-in / -im",
+        "-nin / -iniz",
+        "-in / -iniz"
+      ],
+      "correct": "-in / -iniz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Siz+in (родительный падеж местоимения siz → sizin) + kardeş+iniz (притяжательный аффикс 2 л. мн.ч. → kardeşiniz). Вопрос: «Sizin kaç kardeşiniz var?» — сколько у вас братьев/сестёр? Вариант -in / -iniz верен."
+    },
+    {
+      "id": "A1-gram-005",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Koridorda öğrenci var mı? — Evet, _________ . — Hayır, _______ .",
+      "options": [
+        "var / yok",
+        "yok / var",
+        "değil / var",
+        "var mı? / değil"
+      ],
+      "correct": "var / yok",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Evet (да) → var (есть); Hayır (нет) → yok (нет). Базовая конструкция VAR/YOK уровня А1."
+    },
+    {
+      "id": "A1-gram-006",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Biz durakta otobüs ___________.",
+      "options": [
+        "bekliyorum",
+        "bekliyoruz",
+        "bekliyor",
+        "bekleyorsun",
+        "bekliyorsunuz"
+      ],
+      "correct": "bekliyoruz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее biz (мы) → аффикс -yoruz: bekliyoruz. beklemek → bekliyor + uz = bekliyoruz."
+    },
+    {
+      "id": "A1-gram-007",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ders_____ yemekhaneye gidiyoruz.",
+      "options": [
+        "den sonra",
+        "ten sonra",
+        "sonra",
+        "te sonra"
+      ],
+      "correct": "ten sonra",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ders → последняя буква s (глухая, входит в FıSTıKÇı ŞaHaP) → исходный падеж -ten (не -den). Последняя гласная e (мягкая) → -ten. Итог: dersten sonra."
+    },
+    {
+      "id": "A1-gram-008",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Lütfen, siz de bizimle beraber _________.",
+      "options": [
+        "gelin",
+        "gel",
+        "gelsin",
+        "geleyim",
+        "gelelim"
+      ],
+      "correct": "gelin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Обращение 'siz' (вы, вежливая форма) → повелительное наклонение -(y)In: gel+in = gelin. Форма на -sinler — для 3 л. мн.ч., geleyim — 1 л. ед.ч. желательного, gelelim — 1 л. мн.ч. желательного."
+    },
+    {
+      "id": "A1-gram-009",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Geçen hafta ben de o filme git_____ film çok eğlenceli_______.",
+      "options": [
+        "-dim / -ydi",
+        "-dim / -di",
+        "-tim / -di",
+        "-tim / -ydi",
+        "-dım / -dı"
+      ],
+      "correct": "-tim / -ydi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "git → последняя буква t (глухая, в FıSTıKÇı ŞaHaP) → прошедшее время -tim (не -dim); последняя гласная i мягкая → -tim. eğlenceli → последняя буква i гласная → именное прошедшее -(y)di → eğlenceliydi (-ydi с вставной -y-). Итог: -tim / -ydi."
+    },
+    {
+      "id": "A1-gram-010",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu defter____ nereden aldın?",
+      "options": [
+        "e",
+        "ı",
+        "i",
+        "ye",
+        "yi"
+      ],
+      "correct": "i",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "defter → винительный падеж (прямой определённый объект). Последняя гласная e (мягкая) → -i (не -ı). Озвончения нет (r не PÇTK). Итог: defteri. Аффикс: -i."
+    },
+    {
+      "id": "A1-gram-011",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ankara'dan İstanbul'a otobüs______, İstanbul'dan Almanya'ya uçak______ gideceğiz.",
+      "options": [
+        "-te / -ta",
+        "-le / la",
+        "-yla / yle",
+        "-e / -a",
+        "-ten / tan"
+      ],
+      "correct": "-le / -la",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Творительный падеж (инструмент/средство): otobüs+le (последняя буква s — согласная → -le, последняя гласная ü мягкая → -le) = otobüsle; uçak+la (последняя буква k, но здесь инструмент, озвончение при творит. не происходит → uçakla, последняя гласная a твёрдая → -la). Варианты написаны как -le / la (без дефиса перед la) — формально это -le / -la. Confidence medium: варианты в исходнике слегка неаккуратны. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-gram-012",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Anneannem pencere_______ bahçe_______ bakıyor.",
+      "options": [
+        "-de / -de",
+        "-de / -te",
+        "-den / -ye",
+        "-den / -ya",
+        "-den / -ta"
+      ],
+      "correct": "-den / -ye",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "bakmak управляет направительным падежом: bahçe+ye (bahçe → гласная е мягкая → -ye с вставной -y-). Смотреть ИЗ окна → pencere+den (исходный падеж; последняя буква e — гласная → -den). Итог: pencereden bahçeye bakıyor."
+    },
+    {
+      "id": "A1-gram-013",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ayşe'_______ anne_____ bankada çalışıyor.",
+      "options": [
+        "-nin / -i",
+        "-in / -si",
+        "-in / -yi",
+        "-nin / -si",
+        "-nin / -yi"
+      ],
+      "correct": "-nin / -si",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Двухаффиксный изафет: Ayşe'nin annesi. Ayşe оканчивается на гласную → родительный -(n)in → -nin (с апострофом для имён собственных). anne оканчивается на e (гласная) → притяжательный 3 л. -si (с вставной -s-). Итог: Ayşe'nin annesi."
+    },
+    {
+      "id": "A1-gram-014",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bu akşam spor salonu_____ gidiyorum.",
+      "options": [
+        "-una",
+        "-a",
+        "-undan",
+        "-unda",
+        "-uya"
+      ],
+      "correct": "-una",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "spor salonu — слово оканчивается на гласную u (притяжательный аффикс -u уже есть в «salonu») → направительный с вставной -n-: salonu+na = -una. Итог: spor salonuna gidiyorum."
+    },
+    {
+      "id": "A1-gram-015",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sizin ad_____ ne?",
+      "options": [
+        "ιn",
+        "ı",
+        "nız",
+        "ınız"
+      ],
+      "correct": "ınız",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ad → притяжательный 2 л. мн.ч. (вежливое): ad+ınız = adınız (последняя гласная a, твёрдая → ı; основа ad — согласная d → -ınız). Вопрос: «Sizin adınız ne?»"
+    },
+    {
+      "id": "A1-gram-016",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sen kaç ______?",
+      "options": [
+        "yaşιndasιn",
+        "yaşιndayιz",
+        "yaşιndalar",
+        "yaşιndayιm"
+      ],
+      "correct": "yaşιndasιn",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее sen (ты) → yaşında+sın (именное сказуемое 2 л. ед.ч.). Правильно: yaşındasın."
+    },
+    {
+      "id": "A1-gram-017",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sen şimdi __________ ?",
+      "options": [
+        "neredesiniz",
+        "nerede misin",
+        "neredesin",
+        "neredeydin"
+      ],
+      "correct": "neredesin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее sen (ты) → вопрос о местонахождении сейчас → nerede+sin = neredesin (2 л. ед.ч. настоящего именного времени). neredeydin — прошедшее время."
+    },
+    {
+      "id": "A1-gram-018",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "_______ para var mı?",
+      "options": [
+        "sen",
+        "senden",
+        "sana",
+        "sende"
+      ],
+      "correct": "sende",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«У тебя есть деньги?» → конструкция VAR с местным падежом для обладания: sende para var mı? Местный падеж от sen → sende."
+    },
+    {
+      "id": "A1-gram-019",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sen bugün çok __________.",
+      "options": [
+        "güzelim",
+        "güzeldiniz",
+        "güzelsin",
+        "güzeller"
+      ],
+      "correct": "güzelsin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее sen (ты) → именное сказуемое 2 л. ед.ч.: güzel+sin = güzelsin. güzelim — 1 л. ед.ч.; güzeldiniz — 2 л. мн.ч. прошедшего."
+    },
+    {
+      "id": "A1-gram-020",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Sen sinemaya ___________ ?",
+      "options": [
+        "gitmiyor musunuz",
+        "gitmiyor mι",
+        "gitmiyorlar mu",
+        "gitmiyor musun"
+      ],
+      "correct": "gitmiyor musun",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее sen (ты) → отрицательный вопрос настоящего времени 2 л. ед.ч.: gitmiyor musun? musunuz — для siz; mι — неполная форма; gitmiyorlar mu — для onlar."
+    },
+    {
+      "id": "A1-gram-021",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Zeynep şimdi ____ eve gidiyor.",
+      "options": [
+        "okuldan",
+        "okulu",
+        "okulda",
+        "okuldaydι"
+      ],
+      "correct": "okuldan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Зейнеп идёт домой из школы» → исходный падеж: okuldan. Движение ОТ → -DAn. okul: последняя буква l (звонкая) → -dan; последняя гласная u (твёрдая) → -dan."
+    },
+    {
+      "id": "A1-gram-022",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Dün _____ çok güzel bir hediye aldım.",
+      "options": [
+        "annem",
+        "annemde",
+        "anneme",
+        "annemi"
+      ],
+      "correct": "anneme",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Вчера я купила маме красивый подарок» → дательный падеж (кому): anneme (annem → последняя гласная e мягкая → -e, с вставной нет, т.к. m согласная → anneme)."
+    },
+    {
+      "id": "A1-gram-023",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Geçen akşam arkadaşlarımla beraber sinemaya ______ .",
+      "options": [
+        "gittik",
+        "gideceğiz",
+        "gidecek",
+        "gitmeyeceğiz"
+      ],
+      "correct": "gittik",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Geçen akşam (прошлым вечером) → прошедшее время -DI, 1 л. мн.ч. (biz, т.к. arkadaşlarımla beraber): git+tik = gittik (t глухая → -tik; последняя гласная i → -tik)."
+    },
+    {
+      "id": "A1-gram-024",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Gelecek yıl ben ve arkadaşım birlikte tatile Antalya'ya _________.",
+      "options": [
+        "gittik",
+        "gidiyorsunuz",
+        "gidecekler",
+        "gideceğiz"
+      ],
+      "correct": "gideceğiz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Gelecek yıl (следующий год) → будущее время; ben ve arkadaşım (мы) → 1 л. мн.ч.: gid+eceğ+iz = gideceğiz."
+    },
+    {
+      "id": "A1-gram-025",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Serkan ve Eda bu akşam Atatürk ______ güzel bir oyun izleyecekler.",
+      "options": [
+        "tiyatroda",
+        "tiyatrosunda",
+        "tiyatrosunu",
+        "tiyatrosuna"
+      ],
+      "correct": "tiyatrosunda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«В театре Ататюрка» → Atatürk tiyatrosu (изафет) + местный падеж: tiyatrosu+nda = tiyatrosunda (после гласной вставная -n-, местный -da). Они смотрят спектакль В театре."
+    },
+    {
+      "id": "A1-gram-026",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bu kadının _______ kaç tane ayna var?",
+      "options": [
+        "çantasι",
+        "çantasιndan",
+        "çantasιna",
+        "çantasιnda"
+      ],
+      "correct": "çantasιnda",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«В сумке у этой женщины» → çanta+sı (притяжательный 3 л.) + -nda (местный с вставной -n-): çantasında. VAR для обозначения наличия → где? → местный падеж."
+    },
+    {
+      "id": "A1-gram-027",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "O dün çok hastaydı. O bugün işe _______ .",
+      "options": [
+        "gitmedi",
+        "gitmediler",
+        "gitmediniz",
+        "gitmedik"
+      ],
+      "correct": "gitmedi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Подлежащее O (он/она) → прошедшее отрицательное 3 л. ед.ч.: git+me+di = gitmedi."
+    },
+    {
+      "id": "A1-gram-028",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Siz kaç _______ ?",
+      "options": [
+        "kişiler",
+        "kişisiniz",
+        "kişiyiz",
+        "kişi"
+      ],
+      "correct": "kişisiniz",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Вас сколько человек?» Подлежащее siz (вы) → kişi+siniz = kişisiniz (именное сказуемое 2 л. мн.ч.)."
+    },
+    {
+      "id": "A1-gram-029",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Bizim oda ________ daha büyük.",
+      "options": [
+        "nιz",
+        "sı",
+        "m",
+        "mız",
+        "sarı"
+      ],
+      "correct": "mız",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Наша комната больше» → bizim oda+mız (притяжательный 1 л. мн.ч.): oda → последняя гласная a → -mız. Итог: odamız. Вариант 'sarı' явно дистрактор. Confidence medium: необычный контекст вопроса (странно сравнивать 'bizim oda' с чем-то без контекста). | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-gram-030",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Siz burada _________ , lütfen. Ben biraz sonra geleceğim.",
+      "options": [
+        "bekle",
+        "beklesin",
+        "beklesinler",
+        "bekleyin"
+      ],
+      "correct": "bekleyin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Обращение 'siz' → повелительное наклонение 2 л. мн.ч./вежливое: bekle+yin = bekleyin. bekle: beklesin — 3 л. ед.ч.; beklesinler — 3 л. мн.ч.; bekle — только для sen."
+    },
+    {
+      "id": "A1-gram-031",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ben _____ kayak yapmayı çok seviyorum.",
+      "options": [
+        "kιşta",
+        "kιştan",
+        "kιşιn",
+        "kιşa"
+      ],
+      "correct": "kιşιn",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Я очень люблю кататься на лыжах зимой» → kışın (наречие времени «зимой»; -ın — суффикс наречия времени от сезонов: kışın, yazın, ilkbaharda, sonbaharda). Не падеж, а лексикализованная форма."
+    },
+    {
+      "id": "A1-gram-032",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Biz işe gitmek için onun _______ bindik.",
+      "options": [
+        "arabasιyla",
+        "arabasιndan",
+        "arabasιnda",
+        "arabasιna"
+      ],
+      "correct": "arabasιyla",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Мы сели в его машину» → binmek управляет творительным падежом (-(y)la): arabası+yla = arabasıyla (арабасы → притяжательный 3 л., последняя буква гласная → вставная -y- → -yla)."
+    },
+    {
+      "id": "A1-gram-033",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Yarından sonra saat birde bir toplantı olacak, _____ biz hep beraber otele döneceğiz.",
+      "options": [
+        "toplantιdan sonra",
+        "toplantιyι sonra",
+        "toplantιda sonra",
+        "toplantιya sonra"
+      ],
+      "correct": "toplantιdan sonra",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Послелог -DAn sonra: «после совещания» → toplantı+dan sonra = toplantıdan sonra (последняя гласная ı твёрдая, последняя буква ı гласная → -dan)."
+    },
+    {
+      "id": "A1-gram-034",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Ben hafta içi her gün sabah _____ kalkıyorum, toplam günde _____ uyuyorum.",
+      "options": [
+        "saat yedi / sekiz saat",
+        "saat yediden / saat sekide",
+        "yedi saat / sekiz saati",
+        "saat yedide / sekiz saat"
+      ],
+      "correct": "saat yedide / sekiz saat",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Я встаю в семь утра, сплю в общем восемь часов» → saat yedide (местный падеж времени: в семь часов) + sekiz saat (количество часов без падежа). Итог: saat yedide / sekiz saat."
+    },
+    {
+      "id": "A1-gram-035",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Mustafa ___ sınıfta okuyor.",
+      "options": [
+        "beş",
+        "beşte",
+        "beşinci",
+        "beşinde"
+      ],
+      "correct": "beşinci",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Мустафа учится в пятом классе» → порядковое числительное: beş+inci = beşinci (5-й). beşte — местный падеж от beş; beşinde — нет такой формы."
+    },
+    {
+      "id": "A1-gram-036",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "________ bahçende çok güzel çiçekler var.",
+      "options": [
+        "senin",
+        "seni",
+        "seninle",
+        "sana"
+      ],
+      "correct": "senin",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«В твоём саду» → притяжательная конструкция: senin bahçen (senin — родительный падеж местоимения sen). bahçen — твой сад. Правильно: Senin bahçende."
+    },
+    {
+      "id": "A1-gram-037",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Nerelisiniz? — Ben ___ .",
+      "options": [
+        "Moskova'dayιm",
+        "Moskovalιyιm",
+        "Moskova'yayιm",
+        "Moskovalι"
+      ],
+      "correct": "Moskovalιyιm",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Вопрос «Откуда вы?» → ответ с суффиксом -lI (происхождение): Moskova+lı+yım = Moskovalıyım (после гласной вставная -y-). Москвалı — прилагательное; Moskova'dayım — «я в Москве» (местный падеж)."
+    },
+    {
+      "id": "A1-gram-038",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "______ gömlek alıyorum.",
+      "options": [
+        "mağazada",
+        "mağazadan",
+        "mağazaya",
+        "mağazayla"
+      ],
+      "correct": "mağazadan",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Я покупаю рубашку в магазине (из магазина)» → almak (покупать) управляет исходным падежом: mağazadan (из магазина). Последняя гласная a твёрдая → -dan."
+    },
+    {
+      "id": "A1-gram-039",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Çiçekler ilkbahar __ açıyor.",
+      "options": [
+        "da",
+        "ın",
+        "ta",
+        "günü"
+      ],
+      "correct": "da",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Цветы расцветают весной» → ilkbahar+da = ilkbaharda (местный падеж для времени: весной). В турецком: kışın (зимой), yazın (летом), ilkbaharda (весной), sonbaharda (осенью) — ilkbahar и sonbahar принимают -da, а не наречный суффикс -ın. Последняя буква r звонкая → -da (не -ta). Итог: da."
+    },
+    {
+      "id": "A1-gram-040",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ayşe yarın __________ geliyor.",
+      "options": [
+        "burada",
+        "burası",
+        "buradan",
+        "buraya"
+      ],
+      "correct": "buraya",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Айше завтра приходит сюда» → gelmek с направительным падежом: buraya (сюда). burada — здесь (местный); buradan — отсюда (исходный)."
+    },
+    {
+      "id": "A1-gram-041",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Pazar______ben çalışmıyorum.",
+      "options": [
+        "da",
+        "ta",
+        "sonu",
+        "günü"
+      ],
+      "correct": "günü",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«По воскресеньям я не работаю» → Pazar günü (в воскресенье). Pazar: pazar günü — устойчивое выражение «в воскресенье». Также возможно Pazarda, но тут pazar+günü — лексикализованное сочетание. Confidence medium: в исходнике слово слитно «Pazar______», и pazar günü или pazarları (в исх. нет) — нужна проверка Юли. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-gram-042",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Evde _______ için kafeye gittim.",
+      "options": [
+        "sıkılmak",
+        "sıkılmamak",
+        "sıkılmıyor",
+        "sıkması"
+      ],
+      "correct": "sıkılmamak",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Я пошла в кафе, чтобы не скучать дома» → цель с için + инфинитив: sıkılmamak için (чтобы не скучать). Отрицательный инфинитив: sıkılma+mak = sıkılmamak."
+    },
+    {
+      "id": "A1-gram-043",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "__________ çok güzel.",
+      "options": [
+        "burası",
+        "burada",
+        "burayı",
+        "burasında"
+      ],
+      "correct": "burası",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Здесь очень красиво» (это место очень красиво) → burası (это место, подлежащее). burada — местный падеж (в этом месте, обстоятельство). В роли подлежащего: burası çok güzel."
+    },
+    {
+      "id": "A1-gram-044",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Onun oda_______ hiçbir şey yok.",
+      "options": [
+        "da",
+        "sıyda",
+        "sıda",
+        "sında"
+      ],
+      "correct": "sında",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Onun odası (его/её комната) + местный падеж: odası+nda = odasında (после гласной вставная -n-; гласная ı твёрдая → -da). Итог аффикс: -sında. Вариант 'sında' = -sında верен."
+    },
+    {
+      "id": "A1-gram-045",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Benim ________ çok güzel.",
+      "options": [
+        "şehir",
+        "şehirim",
+        "şehrem",
+        "şehrim",
+        "şehriyim"
+      ],
+      "correct": "şehrim",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Мой город очень красивый» → şehir + притяжательный 1 л. ед.ч.: şehir → усечение гласной (şehr-) + -im = şehrim. şehriyim — ошибочное смешение с именным сказуемым."
+    },
+    {
+      "id": "A1-gram-046",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Hediye _______ çok teşekkür ederim.",
+      "options": [
+        "kolay",
+        "kadar",
+        "dan",
+        "için"
+      ],
+      "correct": "için",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Большое спасибо за подарок» → teşekkür etmek için — но здесь послелог için после существительного: hediye için teşekkür ederim. Итог: için."
+    },
+    {
+      "id": "A1-gram-047",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Şimdi alışveriş merkezi_______ çıktık. Eve gidiyoruz.",
+      "options": [
+        "den",
+        "yden",
+        "nden",
+        "ten"
+      ],
+      "correct": "nden",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "alışveriş merkezi (торговый центр) — слово оканчивается на гласную i (притяжательный аффикс 3 л.) → вставная -n- перед исходным падежом: merkezi+nden = merkezinden → аффикс -nden. Последняя гласная i мягкая → -den → с вставной -n-: -nden."
+    },
+    {
+      "id": "A1-gram-048",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "O zamanda vaktim_____.",
+      "options": [
+        "var degildi",
+        "yoktu",
+        "hayırdı",
+        "degil"
+      ],
+      "correct": "yoktu",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«В то время у меня не было времени» → прошедшее время от yok: yok+tu = yoktu. var değildi также грамматически возможно, но yoktu — стандартная краткая форма. Confidence high для yoktu."
+    },
+    {
+      "id": "A1-voc-049",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Машина Айше (как сказать по-турецки правильно?)",
+      "options": [
+        "Ayşesi arabanı",
+        "Ayşenin arabası",
+        "Ayşe'nin arabası",
+        "Ayşe'nin arabanın"
+      ],
+      "correct": "Ayşe'nin arabası",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Двухаффиксный изафет с именем собственным: Ayşe'nin arabası. Имя собственное → апостроф перед падежным суффиксом: Ayşe'nin. araba → притяжательный 3 л.: arabası."
+    },
+    {
+      "id": "A1-voc-050",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Мой дом (как сказать по-турецки правильно?)",
+      "options": [
+        "evim",
+        "eviyim",
+        "evimi",
+        "benim evi"
+      ],
+      "correct": "evim",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ev + притяжательный 1 л. ед.ч.: ev+im = evim. eviyim — ошибочно (смешение с именным сказуемым); evimi — винительный падеж."
+    },
+    {
+      "id": "A1-voc-051",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ваша комната (как сказать по-турецки правильно?)",
+      "options": [
+        "odamız",
+        "sizin odazin",
+        "odaniz",
+        "odanız"
+      ],
+      "correct": "odanız",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "oda + притяжательный 2 л. мн.ч.: oda+nız = odanız (последняя гласная a твёрдая → -nız с вставной -n-). odamız — «наша комната» (1 л. мн.ч.); odaniz — опечатка (i вместо ı)."
+    },
+    {
+      "id": "A1-voc-052",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Их дом (как сказать по-турецки правильно?)",
+      "options": [
+        "evi",
+        "evileri",
+        "evleri",
+        "evler"
+      ],
+      "correct": "evleri",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Их дом» — в турецком onların evi (ед.ч.) или onların evleri (если у каждого свой дом / мн.ч.). В контексте изолированного вопроса без подлежащего: evleri = притяжательный 3 л. мн.ч. (ev+ler+i) означает «их дома» или «их дом» (когда субъект мн.ч.). Это наиболее вероятный ответ в тесте. Confidence medium: evi тоже корректно для «их дом» в ед.ч. — нужно уточнение у Юли. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-voc-053",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Дом учителя (как сказать по-турецки правильно?)",
+      "options": [
+        "öğretmen ev",
+        "öğretmeni evi",
+        "öğretmenin evi",
+        "öğretmenin evsi"
+      ],
+      "correct": "öğretmenin evi",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Двухаффиксный изафет: öğretmen+in evi. öğretmen → согласная n → -(n)in → öğretmenin; ev → притяжательный 3 л.: ev+i = evi."
+    },
+    {
+      "id": "A1-voc-054",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Подруга моей мамы (как сказать по-турецки правильно?)",
+      "options": [
+        "annem arkadaşı",
+        "annemsi arkadaşı",
+        "annenin arkadaşı",
+        "annemin arkadaşı"
+      ],
+      "correct": "annemin arkadaşı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Подруга моей мамы» → annem (моя мама) + родительный: annem+in → annemin; arkadaş → притяжательный 3 л.: arkadaş+ı = arkadaşı. Итог: annemin arkadaşı."
+    },
+    {
+      "id": "A1-voc-055",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Столица Турции (как сказать по-турецки правильно?)",
+      "options": [
+        "Türkiye başkentin",
+        "Türkiye başkenti",
+        "Türkiye'nin başkenti",
+        "Türkiye'nin başkentsi"
+      ],
+      "correct": "Türkiye'nin başkenti",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Двухаффиксный изафет с именем собственным: Türkiye'nin başkenti. Апостроф перед суффиксом; başkent → притяжательный 3 л.: başkent+i = başkenti."
+    },
+    {
+      "id": "A1-voc-056",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Книга ребенка (как сказать по-турецки правильно?)",
+      "options": [
+        "çoçuğ'un kitabı",
+        "çocuk kitabı",
+        "Çocuğun kitabı",
+        "çocuğ'un kitabı"
+      ],
+      "correct": "Çocuğun kitabı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "çocuk → озвончение PÇTK: k→ğ перед гласной суффикса → çocuğ+un = çocuğun; kitap → озвончение: p→b → kitab+ı = kitabı. Итог: Çocuğun kitabı. Апостроф в «çocuğ'un» — неверно (апостроф только для имён собственных)."
+    },
+    {
+      "id": "A1-voc-057",
+      "level": "A1",
+      "skill": "vocabulary",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Клубничное варенье (как сказать по-турецки правильно?)",
+      "options": [
+        "çileğin reçeli",
+        "çilek reçel",
+        "çilek reçelsi",
+        "çilek reçeli"
+      ],
+      "correct": "çilek reçeli",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Одноаффиксный изафет (категория/тип): çilek reçeli (клубничное варенье как вид варенья). Двухаффиксный çileğin reçeli означал бы «варенье именно этой клубники». Для составных названий продуктов — одноаффиксный изафет."
+    },
+    {
+      "id": "A1-gram-058",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bana bir ____ verin.",
+      "options": [
+        "çay",
+        "çayı"
+      ],
+      "correct": "çay",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Принесите мне один чай» → неопределённый объект (bir + существительное без артикля) → çay без винительного падежа. Винительный -ı ставится только на определённый объект."
+    },
+    {
+      "id": "A1-gram-059",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bana şu ________ alın.",
+      "options": [
+        "kitabı",
+        "kitap"
+      ],
+      "correct": "kitabı",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Возьмите мне вон ту книгу» → şu (вон тот) делает объект определённым → винительный падеж обязателен: kitap → озвончение p→b + -ı = kitabı."
+    },
+    {
+      "id": "A1-gram-060",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Sana bir _____ sormak istiyorum.",
+      "options": [
+        "soru",
+        "soruyu"
+      ],
+      "correct": "soru",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Хочу задать тебе один вопрос» → bir soru (неопределённый объект) → без винительного падежа: soru."
+    },
+    {
+      "id": "A1-gram-061",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Hangi ________ seviyorsun?",
+      "options": [
+        "yemek",
+        "yemeği"
+      ],
+      "correct": "yemeği",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Какую еду ты любишь?» → hangi (который, какой) делает объект определённым → винительный падеж: yemek → озвончение k→ğ + -i = yemeği."
+    },
+    {
+      "id": "A1-gram-062",
+      "level": "A1",
+      "skill": "grammar",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Yabancılar _________ çok beğeniyorlar.",
+      "options": [
+        "İstanbul",
+        "İstanbul'u"
+      ],
+      "correct": "İstanbul'u",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "«Иностранцы очень любят Стамбул» → beğenmek требует определённого прямого объекта → винительный падеж: İstanbul+u = İstanbul'u (апостроф для имён собственных, последняя гласная u → -u)."
+    },
+    {
+      "id": "A1-read-001",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ahmet elli beş yaşında.",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: Ahmet otuz yaşında (30 лет). Elli beş (55) — возраст отца Хюсейина."
+    },
+    {
+      "id": "A1-read-002",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Ahmet bekar.",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: «Ben evliyim» — Ахмет женат, не холост (bekar)."
+    },
+    {
+      "id": "A1-read-003",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Onların evi Bursa'da.",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-1",
+      "confidence": "high",
+      "note": "В тексте: «Bizim evimiz İzmir'de» — их дом в Измире, а не в Бурсе."
+    },
+    {
+      "id": "A1-read-004",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Onlar dört kardeşler.",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-1",
+      "confidence": "high",
+      "note": "«Benim üç kardeşim var» — у Ахмета 3 брата/сестры. Всего детей в семье 4 (Ahmet + 3). Утверждение «Onlar dört kardeşler» трактуется как «Они четверо братьев» — технически они 4 ребёнка в семье, но «kardeş» означает брат/сестра (другой человек), а не все дети. Ответ скорее «неверно» (у Ахмета именно 3 kardeş). Confidence medium: интерпретация зависит от формулировки Юли. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-read-005",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Вставьте слово вместо цифры 1: Bu kasabayı ____1____, her gün aynı ____2____, aynı ____3____, aynı ____4____ görmek bile sıkıcı...",
+      "options": [
+        "seviyorum",
+        "sokakları",
+        "insanları",
+        "dükkanları"
+      ],
+      "correct": "seviyorum",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-2",
+      "confidence": "high",
+      "note": "Позиция 1: «Bu kasabayı _____» — глагол, объект в вин. падеже касабайı → seviyorum (я люблю этот посёлок). Остальные три — существительные в вин. падеже для позиций 2, 3, 4."
+    },
+    {
+      "id": "A1-read-006",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Вставьте слово вместо цифры 2: Bu kasabayı ____1____, her gün aynı ____2____, aynı ____3____, aynı ____4____ görmek bile sıkıcı...",
+      "options": [
+        "insanları",
+        "sokakları",
+        "seviyorum",
+        "dükkanları"
+      ],
+      "correct": "sokakları",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-2",
+      "confidence": "high",
+      "note": "Позиция 2: «her gün aynı ____» — логичный порядок: sokakları (улицы), insanları (люди), dükkanları (магазины). Стандартный порядок перечисления в тексте неизвестен без оригинала — confidence medium. Вероятнее всего: 2=sokakları, 3=insanları, 4=dükkanları, т.к. в реконструированном тексте именно такой порядок. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-read-007",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Вставьте слово вместо цифры 3: Bu kasabayı ____1____, her gün aynı ____2____, aynı ____3____, aynı ____4____ görmek bile sıkıcı...",
+      "options": [
+        "seviyorum",
+        "sokakları",
+        "insanları",
+        "dükkanları"
+      ],
+      "correct": "insanları",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-2",
+      "confidence": "high",
+      "note": "Позиция 3: по логике текста после улиц (sokakları) идут люди (insanları). Confidence medium: порядок зависит от оригинального текста, который в форме был задан определённым образом. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-read-008",
+      "level": "A1",
+      "skill": "reading",
+      "difficulty": 2,
+      "type": "closed",
+      "question": "Вставьте слово вместо цифры 4: Bu kasabayı ____1____, her gün aynı ____2____, aynı ____3____, aynı ____4____ görmek bile sıkıcı...",
+      "options": [
+        "seviyorum",
+        "dükkanları",
+        "sokakları",
+        "insanları"
+      ],
+      "correct": "dükkanları",
+      "expected_answer": null,
+      "passage_id": "A1-read-text-2",
+      "confidence": "high",
+      "note": "Позиция 4: dükkanları (магазины) — последний элемент в перечислении. Confidence medium по той же причине. | подтверждено Юлей 2026-06-12"
+    },
+    {
+      "id": "A1-listen-001",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Kötü rüyadan sonra niçin mutlu oluyoruz?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Çünkü uyanıyoruz ve bunun sadece bir rüya olduğunu anlıyoruz; odamızda, yatağımızdayız (в безопасности).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-002",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "İyi rüyadan sonra niçin mutlu olmuyoruz?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Çünkü uyanınca güzel yer yok — plaj, arkadaşlar, eğlence bitti, odamızdayız (хорошее закончилось).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-003",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "İyi rüyadan sonra niçin tekrar uyumuyoruz?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Çünkü işlerimiz bizi bekliyor; kalkıp işe gidiyoruz (нас ждут дела/работа).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-004",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Bazı insanlar rüyadan sonra bütün gün ne bekliyorlar?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Kötü rüyadan sonra kötü bir şey, iyi rüyadan sonra iyi bir şey bekliyorlar.",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-005",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 2,
+      "type": "open_meaning",
+      "question": "Rüyada kuş görmek ne demek?",
+      "options": null,
+      "correct": null,
+      "expected_answer": "Eve mutluluk gelecek veya iyi bir haber alacaksın (к дому придёт счастье / хорошая новость).",
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-006",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Insanlar bütün rüyalarını hatırlıyorlar. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-007",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bazen rüyamızda çok yüksek yerden düşüyoruz ve çok mutlu oluyoruz. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "неверно",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-008",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "İyi rüyadan sonra uyanmak istemiyoruz. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-listen-009",
+      "level": "A1",
+      "skill": "listening",
+      "difficulty": 1,
+      "type": "closed",
+      "question": "Bazı insanlar rüyadan sonra kitaplara bakıyor. (верно/неверно по аудио)",
+      "options": [
+        "верно",
+        "неверно"
+      ],
+      "correct": "верно",
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "ответ выведен из транскрипта аудио (Whisper large-v3)"
+    },
+    {
+      "id": "A1-write-001",
+      "level": "A1",
+      "skill": "writing",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Выберите одну тему и напишите сочинение (3-5 предложений): En yakın arkadaşınız kim? / Ailenizi anlatın. / Neden Türkçe okuyorsunuz?",
+      "options": null,
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Задание на свободное письмо. Оценивается: использование настоящего времени -yor, притяжательных аффиксов, падежей, базового словарного запаса А1. Эталонного ответа нет — продукция."
+    },
+    {
+      "id": "A1-speak-001",
+      "level": "A1",
+      "skill": "speaking",
+      "difficulty": 2,
+      "type": "production",
+      "question": "Выберите одну тему и запишите аудио (3-5 предложений): Bir gününüz nasıl geçiyor? / Geçen hafta sonu ne yaptınız? / Gelecek yaz ne yapacaksınız?",
+      "options": null,
+      "correct": null,
+      "expected_answer": null,
+      "passage_id": null,
+      "confidence": "high",
+      "note": "Задание на свободное говорение. Оценивается: произношение, использование нужных времён (-yor для настоящего, -dı для прошедшего, -acak для будущего), связность речи. Эталонного ответа нет — продукция."
+    }
+  ]
+}

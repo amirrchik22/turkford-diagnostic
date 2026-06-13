@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Диагностика уровня турецкого · TÜrkford</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <img class="logo" src="/static/logo.png" alt="TÜrkford" />
+      <div id="progress-wrap" class="progress-wrap hidden">
+        <div class="progress"><div id="progress-bar" class="progress-bar"></div></div>
+        <div id="progress-text" class="progress-text"></div>
+      </div>
+    </header>
+
+    <!-- Экран 0: Превью -->
+    <section id="screen-intro" class="screen">
+      <div class="flag">🇹🇷</div>
+      <h1>Диагностика уровня турецкого</h1>
+      <p class="lead">За 12–15 минут определим твой текущий уровень и составим персональный план обучения. Это бесплатно.</p>
+      <ul class="checklist">
+        <li>≈20 вопросов: грамматика, лексика, чтение, аудирование, письмо и говорение</li>
+        <li>Тест адаптивный — подстраивается под твой уровень</li>
+        <li>Прогресс сохраняется автоматически</li>
+        <li>В конце — отчёт, диаграмма навыков и план обучения</li>
+      </ul>
+      <button class="btn-primary" onclick="App.go('contact')">Начать</button>
+    </section>
+
+    <!-- Экран 1: Контакты -->
+    <section id="screen-contact" class="screen hidden">
+      <h2>Знакомство</h2>
+      <p class="muted">Чтобы отправить результат и план.</p>
+      <label>Имя <input id="f-name" type="text" placeholder="Как тебя зовут?" /></label>
+      <label>Email <input id="f-email" type="email" placeholder="you@example.com" /></label>
+      <label>Телефон <input id="f-phone" type="tel" placeholder="+7..." /></label>
+      <label>Telegram <input id="f-telegram" type="text" placeholder="@username" /></label>
+      <label>Как ты сама оцениваешь свой уровень?
+        <select id="f-self">
+          <option value="ноль">Ноль</option>
+          <option value="начинающий">Начинающий</option>
+          <option value="средний">Средний</option>
+          <option value="уже неплохо">Уже неплохо</option>
+        </select>
+      </label>
+      <label class="consent">
+        <input id="f-consent" type="checkbox" onchange="App.toggleConsent()" />
+        <span>Я согласна с <a href="/privacy" target="_blank">Политикой обработки персональных данных</a> и даю согласие на обработку данных для составления отчёта и связи.</span>
+      </label>
+      <button id="btn-contact" class="btn-primary" disabled onclick="App.submitContact()">Дальше</button>
+    </section>
+
+    <!-- Экран 2: Сегмент -->
+    <section id="screen-segment" class="screen hidden">
+      <h2>С какой целью изучаешь турецкий?</h2>
+      <div class="cards" id="segment-cards"></div>
+    </section>
+
+    <!-- Экран 2.5: Цель -->
+    <section id="screen-goal" class="screen hidden">
+      <h2>Какая твоя главная цель?</h2>
+      <p class="muted">Чем конкретнее — тем точнее план.</p>
+      <div class="cards" id="goal-cards"></div>
+      <label class="goal-other">Другое (своими словами)
+        <input id="f-goal-other" type="text" placeholder="Напиши свою цель" />
+      </label>
+      <button class="btn-primary" onclick="App.submitGoal()">Начать тест</button>
+    </section>
+
+    <!-- Экран 3: Тест -->
+    <section id="screen-test" class="screen hidden">
+      <div id="q-passage" class="passage hidden"></div>
+      <div id="q-audio" class="audio-block hidden">
+        <p class="muted">🎧 Прослушай запись и ответь на вопрос:</p>
+        <audio id="q-audio-el" controls></audio>
+      </div>
+      <div class="q-level" id="q-meta"></div>
+      <div class="q-text" id="q-text"></div>
+      <div id="q-answer"></div>
+      <div class="test-actions">
+        <button id="btn-answer" class="btn-primary" onclick="App.submitAnswer()">Ответить</button>
+        <button class="btn-ghost" onclick="App.finishEarly()">Завершить тест</button>
+      </div>
+    </section>
+
+    <!-- Экран 4: Загрузка -->
+    <section id="screen-loading" class="screen hidden center">
+      <div class="spinner"></div>
+      <p class="lead">Анализируем твои ответы и составляем план…</p>
+    </section>
+
+    <!-- Экран 5: Отчёт -->
+    <section id="screen-report" class="screen hidden"></section>
+
+    <!-- Экран 6: NPS -->
+    <section id="screen-nps" class="screen hidden">
+      <h2>Помоги сделать диагностику лучше</h2>
+      <p class="muted">Это займёт 30 секунд.</p>
+      <label>Насколько полезным оказался результат? (1–10)
+        <input id="nps-score" type="range" min="1" max="10" value="8" oninput="document.getElementById('nps-val').textContent=this.value" />
+        <span id="nps-val">8</span>
+      </label>
+      <label>Согласна ли ты с оценкой уровня?
+        <select id="nps-agree">
+          <option value="да">Да, всё точно</option>
+          <option value="частично">Частично</option>
+          <option value="нет">Нет, не согласна</option>
+        </select>
+      </label>
+      <label>Что бы ты улучшила? <textarea id="nps-text" rows="3"></textarea></label>
+      <button class="btn-primary" onclick="App.submitNps()">Отправить</button>
+    </section>
+
+    <!-- Экран 7/8: Спасибо -->
+    <section id="screen-done" class="screen hidden center">
+      <div class="flag">💚</div>
+      <h2>Спасибо!</h2>
+      <p class="lead">Твой результат сохранён. Куратор Türkford скоро свяжется с тобой.</p>
+      <button class="btn-ghost" onclick="App.restart()">Пройти заново</button>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
