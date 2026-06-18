@@ -6,7 +6,7 @@ from functools import lru_cache
 
 from .config import DATA_DIR
 from .errors import BankError, QuestionNotFound
-from .schemas import Level, Passage, Question, QuestionOut
+from .schemas import Level, Passage, Question, QuestionOut, Skill
 
 _BANK_FILES = {
     Level.A1: "questions_a1.json",
@@ -40,7 +40,12 @@ class QuestionBank:
         return p.text if p else None
 
     def to_out(self, q: Question) -> QuestionOut:
-        """Безопасное представление: без correct / expected_answer / note."""
+        """Безопасное представление: без correct / expected_answer / note.
+
+        Текст показываем ТОЛЬКО для чтения. Для аудирования текст — это транскрипт
+        (по сути ответ), его клиенту не отдаём: ученица должна слушать аудио.
+        """
+        passage = self.passage_text(q.passage_id) if q.skill == Skill.reading else None
         return QuestionOut(
             id=q.id,
             level=q.level,
@@ -49,7 +54,7 @@ class QuestionBank:
             type=q.type,
             question=q.question,
             options=q.options,
-            passage_text=self.passage_text(q.passage_id),
+            passage_text=passage,
         )
 
     def by_level(self, level: Level) -> list[Question]:

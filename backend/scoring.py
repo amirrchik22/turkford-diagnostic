@@ -30,9 +30,10 @@ class LevelStat:
 
 @dataclass
 class ScoreState:
-    """Агрегированное состояние по ответам: статистика по уровням и счётчик навыков."""
+    """Агрегированное состояние по ответам: статистика по уровням и счётчики навыков."""
     levels: dict[Level, LevelStat] = field(default_factory=dict)
     skill_answered: dict[Skill, int] = field(default_factory=dict)
+    level_skill: dict[tuple[Level, Skill], int] = field(default_factory=dict)
     asked_ids: set[str] = field(default_factory=set)
 
     def level(self, lv: Level) -> LevelStat:
@@ -40,6 +41,9 @@ class ScoreState:
 
     def skill_count(self, sk: Skill) -> int:
         return self.skill_answered.get(sk, 0)
+
+    def level_skill_count(self, lv: Level, sk: Skill) -> int:
+        return self.level_skill.get((lv, sk), 0)
 
 
 def build_score_state(answers: list[AnswerIn], bank: QuestionBank) -> ScoreState:
@@ -51,6 +55,7 @@ def build_score_state(answers: list[AnswerIn], bank: QuestionBank) -> ScoreState
         q = bank.get(ans.id)
         state.asked_ids.add(q.id)
         state.skill_answered[q.skill] = state.skill_answered.get(q.skill, 0) + 1
+        state.level_skill[(q.level, q.skill)] = state.level_skill.get((q.level, q.skill), 0) + 1
         # Закрытые вопросы участвуют в % верных только если у них есть ключ.
         # Вопросы без правильного ответа (ждут Юлю) не оцениваются, но учитываются в покрытии навыков.
         if q.type == QuestionType.closed and q.correct is not None:

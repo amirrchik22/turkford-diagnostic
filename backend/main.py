@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-from .adaptive import next_question, probe_ids
+from .adaptive import next_question
 from .bank import get_bank
 from .config import settings
 from .errors import ConsentRequired, configure_logging, install_error_handlers, log
@@ -60,13 +60,13 @@ def privacy() -> HTMLResponse:
 
 @app.post("/api/start", response_model=NextResponse)
 def start(req: StartRequest) -> NextResponse:
-    """Старт теста: проверяем согласие ПД и выдаём первый вопрос зонда."""
+    """Старт теста: проверяем согласие ПД и выдаём первый вопрос (А1, лесенка снизу вверх)."""
     if not req.contact.consent_pd:
         raise ConsentRequired()
     bank = get_bank()
     log.info("test_started", email=req.contact.email, segment=req.segment)
-    first_id = probe_ids(bank, settings.probe_size)[0]
-    return NextResponse(question=bank.to_out(bank.get(first_id)), asked=0, progress=0.0)
+    q = next_question([], bank, settings)
+    return NextResponse(question=q, asked=0, progress=0.0)
 
 
 @app.post("/api/next", response_model=NextResponse)

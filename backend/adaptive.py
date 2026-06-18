@@ -1,7 +1,14 @@
-"""Адаптивный движок: стартовый зонд → 3 порога → балансир навыков → матрица уровней.
+"""Адаптивный движок — ЛЕСЕНКА по уровням (А1 → А2 → B1).
 
-Сервер stateless: вся логика — чистые функции над (накопленные ответы, банк).
-LLM здесь НЕ участвует — только правила. Модель вызывается один раз в конце.
+Логика (по требованию методиста):
+- Начинаем с А1 и идём СНИЗУ ВВЕРХ. Вопросы более высокого уровня НЕ показываем,
+  пока текущий не сдан уверенно.
+- На каждом уровне набираем закрытые вопросы по навыкам (грамматика/лексика/чтение/
+  аудирование). Если уровень сдан на ≥80% — поднимаемся выше. Если нет — останавливаемся
+  и «докапываемся» на этом уровне (добираем по навыкам для точного разбора), затем продакшн.
+- Продакшн (письмо + говорение) — 1 задание каждое, на уровне остановки.
+
+Сервер stateless: чистые функции над (накопленные ответы, банк). LLM не участвует.
 """
 from __future__ import annotations
 
@@ -10,122 +17,100 @@ from .config import Settings
 from .scoring import ScoreState, build_score_state
 from .schemas import AnswerIn, Level, Question, QuestionOut, QuestionType, Skill, Zone
 
-# Порядок уровней снизу вверх
 LEVEL_ORDER: list[Level] = [Level.A1, Level.A2, Level.B1]
-# 5 навыков для радара и балансировки
-GRADED_SKILLS: list[Skill] = [Skill.grammar, Skill.reading, Skill.listening, Skill.writing, Skill.speaking]
-PRODUCTION_SKILLS = {Skill.writing, Skill.speaking}
+CLOSED_SKILLS: list[Skill] = [Skill.grammar, Skill.vocabulary, Skill.reading, Skill.listening]
 
-# Пороги (доля верных закрытых)
-T_NOT_MASTERED = 0.60   # <60% — уровень не освоен
-T_MASTERED = 0.80       # ≥80% — освоен
-CORE_CLOSED = 5         # сколько закрытых нужно на фокус-уровне для надёжного решения
-
-
-# --------------------------------------------------------------------------- #
-#  Фаза 1 — стартовый зонд (детерминированный)
-# --------------------------------------------------------------------------- #
-def probe_ids(bank: QuestionBank, size: int) -> list[str]:
-    """size вопросов: поровну с каждого уровня, разные навыки, закрытого типа."""
-    per_level = max(1, size // len(LEVEL_ORDER))
-    ids: list[str] = []
-    for lv in LEVEL_ORDER:
-        closed = sorted(
-            (q for q in bank.by_level(lv) if q.type == QuestionType.closed),
-            key=lambda q: (q.difficulty, q.id),
-        )
-        picked: list[Question] = []
-        seen: set[Skill] = set()
-        for q in closed:                      # сперва разные навыки
-            if q.skill not in seen:
-                picked.append(q)
-                seen.add(q.skill)
-            if len(picked) >= per_level:
-                break
-        for q in closed:                      # добор, если навыков не хватило
-            if len(picked) >= per_level:
-                break
-            if q not in picked:
-                picked.append(q)
-        ids.extend(q.id for q in picked)
-    return ids
+# Пороги
+PASS = 0.80            # сдан уверенно → поднимаемся выше
+T_NOT_MASTERED = 0.60  # ниже — уровень не освоен
+DECIDE_AT = 5          # минимум закрытых на уровне, чтобы принять решение
+# Покрытие навыков на уровне остановки (для радара нужно ≥3 ответов на навык)
+COVER = {Skill.grammar: 3, Skill.reading: 3, Skill.listening: 3}
 
 
 # --------------------------------------------------------------------------- #
-#  Фаза 2 — выбор следующего вопроса
+#  Выбор вопросов
 # --------------------------------------------------------------------------- #
-def _skill_satisfied(state: ScoreState, sk: Skill, settings: Settings) -> bool:
-    if sk in PRODUCTION_SKILLS:
-        return state.skill_count(sk) >= 1            # 1 продакшн-задание = покрыт навык
-    return state.skill_count(sk) >= settings.min_per_skill
-
-
-def _focus_level(state: ScoreState, settings: Settings) -> Level:
-    """Нижний уровень, который ещё не освоен уверенно (или верхний, если все освоены)."""
-    for lv in LEVEL_ORDER:
-        st = state.level(lv)
-        if st.total < CORE_CLOSED:
-            return lv                                # сначала набрать данные тут
-        if st.ratio < T_MASTERED:
-            return lv                                # не освоен уверенно — фокус здесь
-    return LEVEL_ORDER[-1]
-
-
 def _choose(cands: list[Question]) -> Question:
-    """Детерминированный выбор: по возрастанию сложности, затем по id."""
     return sorted(cands, key=lambda q: (q.difficulty, q.id))[0]
 
 
-def _pick_next(state: ScoreState, bank: QuestionBank, focus: Level, settings: Settings) -> Question | None:
-    avail = [q for q in bank.questions if q.id not in state.asked_ids]
+def _covered(state: ScoreState, bank: QuestionBank, lv: Level) -> bool:
+    """На уровне остановки набрано достаточно по ключевым навыкам (или вопросы кончились)."""
+    for sk, target in COVER.items():
+        if state.level_skill_count(lv, sk) >= target:
+            continue
+        more = any(
+            q.level == lv and q.skill == sk and q.type == QuestionType.closed
+            and q.correct is not None and q.id not in state.asked_ids
+            for q in bank.questions
+        )
+        if more:
+            return False
+    return True
+
+
+def _pick_closed(state: ScoreState, bank: QuestionBank, lv: Level) -> Question | None:
+    """Следующий закрытый вопрос уровня lv — балансируя навыки (грамматика/чтение/аудир.)."""
+    avail = [
+        q for q in bank.questions
+        if q.level == lv and q.type == QuestionType.closed
+        and q.correct is not None and q.id not in state.asked_ids
+    ]
     if not avail:
         return None
+    skills_present = {q.skill for q in avail}
 
-    # 1) Закрыть непокрытые навыки (балансир), начиная с наименее покрытого
-    unsatisfied = sorted(
-        (sk for sk in GRADED_SKILLS if not _skill_satisfied(state, sk, settings)),
-        key=lambda sk: state.skill_count(sk),
-    )
-    for sk in unsatisfied:
-        order = [focus] + [lv for lv in LEVEL_ORDER if lv != focus]
-        for lv in order:
-            cands = [q for q in avail if q.skill == sk and q.level == lv]
+    def deficit(sk: Skill) -> int:
+        return COVER.get(sk, 1) - state.level_skill_count(lv, sk)
+
+    best = max(skills_present, key=lambda sk: (deficit(sk), -state.level_skill_count(lv, sk)))
+    return _choose([q for q in avail if q.skill == best])
+
+
+def _pick_production(state: ScoreState, bank: QuestionBank, lv: Level) -> Question | None:
+    """1 письмо + 1 говорение на уровне остановки (или ближайшем доступном)."""
+    for sk in (Skill.writing, Skill.speaking):
+        if state.skill_count(sk) > 0:
+            continue
+        order = [lv] + [x for x in LEVEL_ORDER if x != lv]
+        for level in order:
+            cands = [
+                q for q in bank.questions
+                if q.level == level and q.skill == sk and q.id not in state.asked_ids
+            ]
             if cands:
                 return _choose(cands)
+    return None
 
-    # 2) Добрать закрытых на фокус-уровне для надёжного порога
-    st = state.level(focus)
-    if st.total < CORE_CLOSED:
-        cands = [q for q in avail if q.level == focus and q.type == QuestionType.closed]
-        if cands:
-            return _choose(cands)
 
-    return None  # всё нужное собрано → тест завершён
+def _current_stage(state: ScoreState, bank: QuestionBank) -> tuple[str, Level]:
+    """Где мы: ('closed'|'production', уровень). Идём снизу вверх, не пуская выше неосвоенного."""
+    for lv in LEVEL_ORDER:
+        st = state.level(lv)
+        if st.total < DECIDE_AT:
+            return ("closed", lv)               # ещё набираем, чтобы решить
+        if st.ratio >= PASS and lv != LEVEL_ORDER[-1]:
+            continue                            # сдан → следующий уровень
+        if not _covered(state, bank, lv):
+            return ("closed", lv)               # уровень остановки — докапываем по навыкам
+        return ("production", lv)
+    return ("production", LEVEL_ORDER[-1])
 
 
 def next_question(answers: list[AnswerIn], bank: QuestionBank, settings: Settings) -> QuestionOut | None:
-    """Главная функция адаптивности. None → тест завершён."""
+    """Главная функция. None → тест завершён."""
     state = build_score_state(answers, bank)
-    answered = len(state.asked_ids)
-
-    # Фаза 1: стартовый зонд
-    probe = probe_ids(bank, settings.probe_size)
-    if answered < len(probe):
-        for qid in probe:
-            if qid not in state.asked_ids and bank.exists(qid):
-                return bank.to_out(bank.get(qid))
-
-    # Стоп: лимит вопросов
-    if answered >= settings.max_questions:
+    if len(state.asked_ids) >= settings.max_questions:
         return None
-    # Стоп: завалила А1 (<60% при достаточной выборке)
-    a1 = state.level(Level.A1)
-    if a1.total >= 3 and a1.ratio < T_NOT_MASTERED:
-        return None
-
-    focus = _focus_level(state, settings)
-    nxt = _pick_next(state, bank, focus, settings)
-    return bank.to_out(nxt) if nxt else None
+    phase, lv = _current_stage(state, bank)
+    if phase == "closed":
+        q = _pick_closed(state, bank, lv)
+        if q:
+            return bank.to_out(q)
+        phase = "production"                     # закрытые кончились → продакшн
+    q = _pick_production(state, bank, lv)
+    return bank.to_out(q) if q else None
 
 
 # --------------------------------------------------------------------------- #
@@ -135,17 +120,15 @@ def level_from_ratios(a1: float, a2: float, b1: float, a1_total: int) -> tuple[L
     """Чистая матрица уровней (легко тестируется отдельно от банка)."""
     if a1_total == 0 or a1 < T_NOT_MASTERED:
         return Level.A0, Zone.in_progress
-    if a1 < T_MASTERED:
+    if a1 < PASS:
         return Level.A1, Zone.in_progress
-    # A1 освоен уверенно
     if a2 < T_NOT_MASTERED:
         return Level.A1, Zone.confident
-    if a2 < T_MASTERED:
+    if a2 < PASS:
         return Level.A2, Zone.in_progress
-    # A2 освоен уверенно
     if b1 < T_NOT_MASTERED:
         return Level.A2, Zone.confident
-    if b1 < T_MASTERED:
+    if b1 < PASS:
         return Level.B1, Zone.in_progress
     return Level.B1, Zone.confident
 
