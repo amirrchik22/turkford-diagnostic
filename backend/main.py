@@ -29,6 +29,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 install_error_handlers(app)
+
+
+@app.middleware("http")
+async def no_cache_static(request, call_next):
+    """Страница и статика не кэшируются браузером — после деплоя клиент сразу видит свежую версию."""
+    response = await call_next(request)
+    path = request.url.path
+    if path == "/" or path.startswith("/static"):
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    return response
+
+
 app.mount("/static", StaticFiles(directory=Path(__file__).resolve().parent.parent / "frontend"), name="static")
 
 
