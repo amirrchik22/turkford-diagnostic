@@ -3,10 +3,10 @@ from __future__ import annotations
 
 import pytest
 
-from backend.adaptive import assign_level, level_from_ratios, next_question
+from backend.adaptive import assign_level, level_from_ratios, next_step
 from backend.bank import get_bank
 from backend.config import settings
-from backend.schemas import AnswerIn, Level, QuestionType, Zone
+from backend.schemas import AnswerIn, Level, QuestionType, Skill, Zone
 
 BANK = get_bank()
 
@@ -24,16 +24,16 @@ def simulate(mastered_upto: Level | None) -> list[AnswerIn]:
     cap = order.get(mastered_upto, 0) if mastered_upto else 0
     answers: list[AnswerIn] = []
     for _ in range(200):
-        q = next_question(answers, BANK, settings)
-        if q is None:
+        step = next_step(answers, BANK, settings)
+        if not step:
             break
-        full = BANK.get(q.id)
-        if full.type == QuestionType.closed:
-            correct = order.get(full.level, 9) <= cap
-            given = full.correct if correct else _wrong_option(full)
-            answers.append(AnswerIn(id=q.id, given=given))
-        else:
-            answers.append(AnswerIn(id=q.id, given="ответ", user_text="Benim ailem güzel."))
+        for full in step:
+            if full.type == QuestionType.closed:
+                correct = order.get(full.level, 9) <= cap
+                given = full.correct if correct else _wrong_option(full)
+                answers.append(AnswerIn(id=full.id, given=given))
+            else:
+                answers.append(AnswerIn(id=full.id, given="ответ", user_text="Benim ailem güzel."))
     else:
         pytest.fail("Тест не завершился — возможно зацикливание")
     return answers
@@ -46,9 +46,25 @@ def _levels_asked(answers: list[AnswerIn]) -> set[Level]:
 # --------------------------------------------------------------------------- #
 #  Старт и лесенка
 # --------------------------------------------------------------------------- #
-def test_first_question_is_a1():
-    q = next_question([], BANK, settings)
-    assert q is not None and q.level == Level.A1
+def test_first_step_is_a1():
+    step = next_step([], BANK, settings)
+    assert step and step[0].level == Level.A1
+
+
+def test_listening_comes_as_block():
+    """Аудирование выдаётся блоком (несколько вопросов по одному аудио сразу)."""
+    answers: list[AnswerIn] = []
+    saw_block = False
+    for _ in range(200):
+        step = next_step(answers, BANK, settings)
+        if not step:
+            break
+        if step[0].skill == Skill.listening and len(step) > 1:
+            saw_block = True
+        for full in step:
+            given = full.correct if full.type == QuestionType.closed else "x"
+            answers.append(AnswerIn(id=full.id, given=given or "x", user_text="x"))
+    assert saw_block
 
 
 def test_failing_a1_never_shows_higher_levels():

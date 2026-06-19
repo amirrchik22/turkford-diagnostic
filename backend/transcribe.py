@@ -19,7 +19,8 @@ from .config import settings
 from .errors import TranscriptionError, log
 
 _LOCAL_MODEL_SIZE = "large-v3"
-_TURKISH = {"tr", "turkish"}
+# Азербайджанский — почти как турецкий, Whisper их часто путает → принимаем как турецкий.
+_TURKISH = {"tr", "turkish", "az", "azerbaijani", "azerbaijani"}
 
 
 @dataclass

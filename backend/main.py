@@ -11,13 +11,42 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-from .adaptive import next_question
+from .adaptive import next_step
 from .bank import get_bank
 from .config import settings
 from .errors import ConsentRequired, configure_logging, install_error_handlers, log
 from .evaluator import evaluate
-from .schemas import FinishRequest, NextRequest, NextResponse, Report, StartRequest
+from .schemas import (
+    FinishRequest,
+    NextRequest,
+    NextResponse,
+    QuestionBlock,
+    Report,
+    Skill,
+    StartRequest,
+)
 from .transcribe import transcribe
+
+_PASSAGE_SKILLS = {Skill.reading, Skill.listening}
+
+
+def _build_next(answers: list, bank, asked: int) -> NextResponse:
+    """Собирает ответ: одиночный вопрос или блок (чтение/аудирование на одном экране)."""
+    step = next_step(answers, bank, settings)
+    progress = min(1.0, asked / settings.max_questions)
+    if not step:
+        return NextResponse(done=True, asked=asked, progress=1.0)
+    first = step[0]
+    if first.skill in _PASSAGE_SKILLS:
+        block = QuestionBlock(
+            skill=first.skill,
+            level=first.level,
+            passage_text=bank.passage_text(first.passage_id) if first.skill == Skill.reading else None,
+            audio_level=first.level.value.lower() if first.skill == Skill.listening else None,
+            questions=[bank.to_out(q) for q in step],
+        )
+        return NextResponse(block=block, asked=asked, progress=progress)
+    return NextResponse(question=bank.to_out(first), asked=asked, progress=progress)
 
 configure_logging()
 
@@ -72,25 +101,20 @@ def privacy() -> HTMLResponse:
 
 @app.post("/api/start", response_model=NextResponse)
 def start(req: StartRequest) -> NextResponse:
-    """Старт теста: проверяем согласие ПД и выдаём первый вопрос (А1, лесенка снизу вверх)."""
+    """Старт теста: проверяем согласие ПД и выдаём первый шаг (А1, лесенка снизу вверх)."""
     if not req.contact.consent_pd:
         raise ConsentRequired()
     bank = get_bank()
     log.info("test_started", email=req.contact.email, segment=req.segment)
-    q = next_question([], bank, settings)
-    return NextResponse(question=q, asked=0, progress=0.0)
+    return _build_next([], bank, asked=0)
 
 
 @app.post("/api/next", response_model=NextResponse)
 def next_(req: NextRequest) -> NextResponse:
-    """Возвращает следующий вопрос по накопленным ответам или сигнал завершения."""
+    """Следующий шаг (вопрос или блок) по накопленным ответам, либо сигнал завершения."""
     bank = get_bank()
-    q = next_question(req.answers, bank, settings)
     asked = len({a.id for a in req.answers if bank.exists(a.id)})
-    progress = min(1.0, asked / settings.max_questions)
-    if q is None:
-        return NextResponse(question=None, done=True, asked=asked, progress=1.0)
-    return NextResponse(question=q, done=False, asked=asked, progress=progress)
+    return _build_next(req.answers, bank, asked=asked)
 
 
 @app.post("/api/audio")

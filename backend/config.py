@@ -27,7 +27,7 @@ class Settings(BaseSettings):
 
     # --- Поведение теста ---
     probe_size: int = Field(default=6, description="Вопросов в стартовом зонде (Фаза 1)")
-    max_questions: int = Field(default=22, description="Жёсткий лимит вопросов")
+    max_questions: int = Field(default=28, description="Жёсткий лимит вопросов (хватает на 3 уровня + продакшн)")
     min_per_skill: int = Field(default=4, description="Минимум баллов на каждый из 5 навыков")
 
     # --- Прочее ---

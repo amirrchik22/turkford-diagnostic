@@ -108,12 +108,73 @@ const App = (() => {
     try {
       const res = await api("/api/start", { contact: s.contact, segment: s.segment, goal: s.goal });
       s.answers = []; save();
-      showQuestion(res.question); go("test");
+      go("test"); renderStep(res);
     } catch (e) { alert(e.message); }
   }
 
-  // ---- Экран 3: вопрос ----
+  // ---- Экран 3: шаг (одиночный вопрос или блок) ----
+  function renderStep(data) {
+    setProgress(data.progress, data.asked);
+    if (data.done) { finish(); return; }
+    if (data.block) { showBlock(data.block); } else { showQuestion(data.question); }
+  }
+
+  function submit() { if (s.mode === "block") submitBlock(); else submitAnswer(); }
+
+  // Блок: текст/аудио + несколько вопросов на одном экране
+  function showBlock(block) {
+    s.mode = "block"; s.block = block; s.blockSel = {};
+    const passage = document.getElementById("q-passage");
+    passage.classList.toggle("hidden", !block.passage_text);
+    if (block.passage_text) passage.textContent = block.passage_text;
+    const audio = document.getElementById("q-audio");
+    if (block.audio_level) {
+      audio.classList.remove("hidden");
+      document.getElementById("q-audio-el").src = "/static/audio/" + block.audio_level + ".m4a";
+    } else { audio.classList.add("hidden"); }
+    document.getElementById("q-meta").textContent = `${block.level} · ${skillRu(block.skill)}`;
+    document.getElementById("q-text").textContent = block.skill === "listening"
+      ? "Прослушай аудио и ответь на все вопросы:" : "Прочитай текст и ответь на все вопросы:";
+    const ans = document.getElementById("q-answer"); ans.innerHTML = "";
+    block.questions.forEach((q, i) => {
+      const wrap = document.createElement("div"); wrap.className = "q-sub";
+      const t = document.createElement("div"); t.className = "q-sub-text";
+      t.textContent = (i + 1) + ". " + q.question; wrap.appendChild(t);
+      if (q.type === "closed") {
+        q.options.forEach(o => {
+          const b = document.createElement("button"); b.className = "opt"; b.textContent = o;
+          b.onclick = () => { wrap.querySelectorAll(".opt").forEach(x => x.classList.remove("selected"));
+            b.classList.add("selected"); s.blockSel[q.id] = { given: o }; };
+          wrap.appendChild(b);
+        });
+      } else {
+        const inp = document.createElement("textarea"); inp.rows = 2; inp.placeholder = "Твой ответ…";
+        inp.className = "block-open"; inp.dataset.qid = q.id; wrap.appendChild(inp);
+      }
+      ans.appendChild(wrap);
+    });
+  }
+
+  async function submitBlock() {
+    for (const q of s.block.questions) {
+      const a = { id: q.id };
+      if (q.type === "closed") {
+        if (!s.blockSel[q.id]) { alert("Ответь на все вопросы блока."); return; }
+        a.given = s.blockSel[q.id].given;
+      } else {
+        const inp = document.querySelector('.block-open[data-qid="' + q.id + '"]');
+        a.given = (inp && inp.value.trim()) || "";
+      }
+      s.answers.push(a);
+    }
+    save();
+    try { renderStep(await api("/api/next", { answers: s.answers })); }
+    catch (e) { alert(e.message); }
+  }
+
+  // ---- одиночный вопрос ----
   function showQuestion(q) {
+    s.mode = "single"; s.block = null;
     s.current = q; s.selected = null;
     const passage = document.getElementById("q-passage");
     passage.classList.toggle("hidden", !q.passage_text);
@@ -252,11 +313,8 @@ const App = (() => {
       a.user_text = s.selected.user_text; a.transcript = s.selected.transcript;
     }
     s.answers.push(a); save();
-    try {
-      const res = await api("/api/next", { answers: s.answers });
-      setProgress(res.progress, res.asked);
-      if (res.done) { finish(); } else { showQuestion(res.question); }
-    } catch (e) { alert(e.message); }
+    try { renderStep(await api("/api/next", { answers: s.answers })); }
+    catch (e) { alert(e.message); }
   }
 
   function setProgress(p, asked) {
@@ -355,5 +413,5 @@ const App = (() => {
   }
 
   restore();
-  return { go, toggleConsent, submitContact, submitGoal, submitAnswer, finishEarly, submitNps, restart, _rerec: startRec };
+  return { go, toggleConsent, submitContact, submitGoal, submit, submitAnswer, finishEarly, submitNps, restart, _rerec: startRec };
 })();

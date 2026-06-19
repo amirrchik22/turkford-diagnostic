@@ -111,8 +111,18 @@ class NextRequest(BaseModel):
     answers: list[AnswerIn] = Field(default_factory=list)
 
 
+class QuestionBlock(BaseModel):
+    """Несколько вопросов по одному тексту/аудио — показываются на одном экране."""
+    skill: Skill
+    level: Level
+    passage_text: str | None = None   # текст для чтения
+    audio_level: str | None = None    # уровень для подгрузки аудио (a1/a2/b1)
+    questions: list[QuestionOut] = Field(default_factory=list)
+
+
 class NextResponse(BaseModel):
     question: QuestionOut | None = None
+    block: QuestionBlock | None = None
     done: bool = False
     asked: int = 0
     progress: float = Field(default=0.0, ge=0.0, le=1.0)

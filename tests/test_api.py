@@ -28,20 +28,28 @@ def _answer_for(qid: str) -> dict:
     return {"id": qid, "given": "ответ", "user_text": "Benim ailem büyük ve güzel."}
 
 
+def _step_questions(data: dict) -> list[dict]:
+    """Вопросы текущего шага: одиночный вопрос или блок (чтение/аудирование)."""
+    if data.get("block"):
+        return data["block"]["questions"]
+    if data.get("question"):
+        return [data["question"]]
+    return []
+
+
 def _run_full_test() -> list[dict]:
     r = client.post("/api/start", json={"contact": CONTACT, "segment": "семья", "goal": "говорить с семьёй мужа"})
     assert r.status_code == 200
-    q = r.json()["question"]
+    data = r.json()
     answers: list[dict] = []
     guard = 0
-    while q is not None and guard < 100:
-        answers.append(_answer_for(q["id"]))
-        nr = client.post("/api/next", json={"answers": answers})
-        assert nr.status_code == 200
-        data = nr.json()
-        if data["done"]:
+    while not data.get("done") and guard < 100:
+        qs = _step_questions(data)
+        if not qs:
             break
-        q = data["question"]
+        for q in qs:
+            answers.append(_answer_for(q["id"]))
+        data = client.post("/api/next", json={"answers": answers}).json()
         guard += 1
     return answers
 
