@@ -29,28 +29,38 @@ from .schemas import (
 )
 from .scoring import ScoreState, build_score_state, is_correct_closed
 
-_COURSES = {
-    Level.A0: ("A1", "Курс Türkford А1", "https://turkford.com/kurs_a1"),
-    Level.A1: ("A2", "Курс Türkford А2", "https://turkford.com/kurs_a2"),
-    Level.A2: ("B1", "Курс Türkford B1", "https://turkford.com/kurs_b1"),
+CASE_VIDEOS = {
+    "malika": "https://kinescope.io/94tzsXzV26JMiesG5Yt4cp",
+    "marina_family": "https://kinescope.io/xbHEsT96o5gsvif4x3jKxq",
+    "regina": "https://kinescope.io/8r4Vp6SK8PvDwE1HE7rhNA",
+    "lyubov": "https://kinescope.io/wf5xsLtZCinV149TXLYXhg",
+    "ira": "https://kinescope.io/6egp4c6KSdeuHGyqjF8jor",
+}
+
+_COURSE_BY_LEVEL = {
+    Level.A1: ("A1", "Курс Türkford А1", "https://turkford.com/kurs_a1"),
+    Level.A2: ("A2", "Курс Türkford А2", "https://turkford.com/kurs_a2"),
     Level.B1: ("B1", "Курс Türkford B1", "https://turkford.com/kurs_b1"),
 }
+_NEXT = {Level.A1: Level.A2, Level.A2: Level.B1}
 _LABELS = {Level.A0: "Самое начало", Level.A1: "Базовый", Level.A2: "Средний", Level.B1: "Уверенный"}
 
 
 def _course_for(level: Level, zone: Zone) -> RecommendedCourse:
-    """Рекомендуемый курс по матрице: освоенный уровень → курс следующего."""
+    """Курс: уровень в процессе → курс ЭТОГО уровня; уровень освоен → курс следующего."""
+    if level == Level.A0:
+        lv, name, url = _COURSE_BY_LEVEL[Level.A1]
+        return RecommendedCourse(level=lv, name=name, url=url, why="Начни с основ на курсе А1.")
     if level == Level.B1 and zone == Zone.confident:
         return RecommendedCourse(
-            level="B1", name="Созвон с куратором (B2)", url="https://turkford.com",
-            why="Ты уверенно держишь B1 — обсуди с куратором переход к B2.",
+            level="B1", name="Созвон с менеджером (B2)", url="https://turkford.com",
+            why="Ты уверенно держишь B1 — обсуди с менеджером дальнейшее развитие.",
         )
-    if zone == Zone.confident and level in (Level.A1, Level.A2):
-        nxt, name, url = _COURSES[level]
-        return RecommendedCourse(level=nxt, name=name, url=url, why="Уровень освоен — пора на следующий курс.")
-    nxt, name, url = _COURSES[level]
-    cur = level.value if level != Level.A0 else "A1"
-    return RecommendedCourse(level=cur, name=name, url=url, why="Закрепи текущий уровень на курсе.")
+    if zone == Zone.confident:  # А1/А2 освоены уверенно → следующий курс
+        lv, name, url = _COURSE_BY_LEVEL[_NEXT[level]]
+        return RecommendedCourse(level=lv, name=name, url=url, why="Уровень освоен — пора на следующий курс.")
+    lv, name, url = _COURSE_BY_LEVEL[level]  # в процессе → курс текущего уровня
+    return RecommendedCourse(level=lv, name=name, url=url, why="Закрепи текущий уровень на курсе.")
 
 
 # --------------------------------------------------------------------------- #
@@ -141,9 +151,9 @@ def _mock_report(req: StartRequest, level: Level, zone: Zone, stats: ScoreState)
                       f"которые ведут к результату шаг за шагом.",
         ),
         recommended_case=RecommendedCase(
-            id="anon_speaking", name="Выпускница Türkford",
-            story_before="Начинала с базового уровня и страха говорить.",
-            story_after="Через системную практику начала свободно общаться.",
+            id="malika", name="Малика",
+            story_before="Знала, что её хочет понять семья мужа, но боялась произнести простую фразу.",
+            story_after="Сама говорит у нотариуса, торгуется на рынке, общается со свекровью.",
         ),
         plan=StudyPlan(
             target_level=course.level,
@@ -178,8 +188,13 @@ def evaluate(req: StartRequest, answers: list[AnswerIn], bank: QuestionBank) -> 
         log.info("eval_mock_mode", reason="no_openai_key")
         report = _mock_report(req, level, zone, stats)
 
-    # Рекомендацию курса фиксируем детерминированно (модель иногда выдумывает несуществующий kurs_b2)
-    report.recommended_course = _course_for(level, zone)
+    # Курс — под ИТОГОВЫЙ (активный) уровень из отчёта, а не под уровень узнавания.
+    # Детерминированно, чтобы модель не выдумывала несуществующий kurs_b2.
+    report.recommended_course = _course_for(report.level, report.level_zone)
+    # Видео кейса — детерминированно по id (модель не знает реальные ссылки)
+    video = CASE_VIDEOS.get(report.recommended_case.id)
+    if video:
+        report.recommended_case.video_url = video
     # Коды генерируются на сервере, не моделью
     report.promo_code = generate_promo_code()
     report.referral_code = generate_referral_code(req.contact.name)

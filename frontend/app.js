@@ -8,12 +8,12 @@ const App = (() => {
     { v: "культура", t: "📺 Для себя / культура" },
   ];
   const GOALS = [
-    "Свободно говорить с семьёй / в Турции",
-    "Уверенно общаться в быту (врач, документы, магазин)",
-    "Понимать сериалы и музыку в оригинале",
-    "Работать с турецкими партнёрами / клиентами",
-    "Путешествовать по Турции свободно",
-    "Развиваться для себя, учить в удовольствие",
+    "💚 Свободно говорить с семьёй мужа / в Турции",
+    "🏥 Уверенно общаться в быту (врач, документы, магазин)",
+    "📺 Понимать сериалы и музыку в оригинале",
+    "💼 Работать с турецкими партнёрами / клиентами",
+    "✈️ Путешествовать по Турции и чувствовать свободу в общении",
+    "📚 Развиваться для себя / учить язык в удовольствие",
   ];
 
   let s = { screen: "intro", contact: {}, segment: null, goal: null,
@@ -355,7 +355,8 @@ const App = (() => {
       <div class="report-block"><h3>Комментарий</h3><p>${r.feedback}</p></div>
       <div class="report-block"><h3>💚 ${r.target_solution.goal_echo}</h3><p>${r.target_solution.paragraph}</p></div>
       <div class="report-block"><h3>История выпускницы — ${r.recommended_case.name}</h3>
-        <p>${r.recommended_case.story_before}<br>→ ${r.recommended_case.story_after}</p></div>
+        <p>${r.recommended_case.story_before}<br>→ ${r.recommended_case.story_after}</p>
+        ${r.recommended_case.video_url ? `<a class="btn-ghost" href="${r.recommended_case.video_url}" target="_blank">▶ Смотреть видео</a>` : ""}</div>
       <div class="report-block"><h3>План: ${r.plan.target_level}</h3>
         <p class="muted">${r.plan.estimated}</p>
         <ul>${r.plan.topics.map(t => `<li>${t}</li>`).join("")}</ul>
@@ -363,7 +364,7 @@ const App = (() => {
       <div class="report-block"><h3>Подходящий курс</h3>
         <p>${r.recommended_course.name} — ${r.recommended_course.why}</p>
         <a class="btn-ghost" href="${r.recommended_course.url}" target="_blank">Посмотреть курс</a></div>
-      <div class="promo">🎁 ${r.promo_code} · −5000 ₽ на 24 часа</div>
+      <div class="promo">🎁 ${r.promo_code} — твоя личная скидка 5 000 ₽ на курс. Сгорает через 24 часа.</div>
       <button class="btn-primary" onclick="App.go('nps')">Дальше</button>`;
   }
 
