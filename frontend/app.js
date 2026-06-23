@@ -341,8 +341,10 @@ const App = (() => {
     const el = document.getElementById("screen-report");
     const levels = ["A0", "A1", "A2", "B1"];
     const scale = levels.map(l => `<span class="${l === r.level ? "active" : ""}">${l}</span>`).join("");
+    const stColor = st => st === "хорошо" ? "#2e9e6b" : st === "средне" ? "#d68a1e" : "#e23b2e";
     const skills = Object.entries(r.skills).map(([k, v]) =>
-      `<div class="skill-row"><span>${skillRu(k)}</span><span>${v.status} — ${v.note}</span></div>`).join("");
+      `<div class="skill-row"><span class="skill-name">${skillRu(k)}</span>` +
+      `<span class="skill-note"><b style="color:${stColor(v.status)}">${v.status}</b> — ${v.note}</span></div>`).join("");
     el.innerHTML = `
       <div class="level-badge">
         <div class="level-big">${r.level}</div>

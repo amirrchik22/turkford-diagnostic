@@ -114,8 +114,11 @@ input[type=range]{width:78%;accent-color:var(--orange)}
 .radar{display:block;margin:10px auto}
 .report-block{margin:18px 0;padding:20px;border-radius:22px;background:#f7f9fd;border:1.5px solid var(--line)}
 .report-block h3{margin:0 0 10px;color:var(--blue);font-size:17px;font-weight:800}
-.skill-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.skill-row{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:start}
 .skill-row:last-child{border:none}
+.skill-name{font-weight:800;color:var(--navy)}
+.skill-note{color:#4a5266;line-height:1.45}
+@media(max-width:520px){.skill-row{grid-template-columns:96px 1fr;gap:10px}}
 .promo{font-size:23px;font-weight:800;letter-spacing:1px;color:var(--orange);background:#fff7ec;
   border:2px dashed var(--yellow);border-radius:20px;padding:16px;text-align:center;margin:12px 0}
 @media(max-width:520px){.cards{grid-template-columns:1fr}.wrap{padding:10px}.screen{padding:24px 18px}h1{font-size:24px}}
