@@ -83,9 +83,21 @@ def health() -> dict[str, object]:
     return {"status": "ok", "questions": len(bank.questions), "has_openai": settings.has_openai}
 
 
+def _asset_version() -> str:
+    """Версия статики = max mtime app.js/styles.css. Меняется при каждом деплое → сброс кэша."""
+    try:
+        return str(int(max(
+            (FRONTEND_DIR / "app.js").stat().st_mtime,
+            (FRONTEND_DIR / "styles.css").stat().st_mtime,
+        )))
+    except OSError:
+        return "1"
+
+
 @app.get("/", response_class=HTMLResponse)
-def index() -> FileResponse:
-    return FileResponse(FRONTEND_DIR / "index.html")
+def index() -> HTMLResponse:
+    html = (FRONTEND_DIR / "index.html").read_text(encoding="utf-8")
+    return HTMLResponse(html.replace("__VER__", _asset_version()))
 
 
 @app.get("/privacy", response_class=HTMLResponse)
