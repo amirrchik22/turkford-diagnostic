@@ -274,13 +274,16 @@ const App = (() => {
       const res = await api("/api/audio", fd, true);
 
       if (!res.is_turkish) {
-        // речь не на турецком — не принимаем, просим переговорить
-        s.selected = null;
+        // речь не на турецком — предупреждаем, но НЕ блокируем (можно перезаписать или всё равно отправить)
+        s.selected = { transcript: res.transcript, user_text: res.transcript };
         const lang = LANG_RU[res.language] || res.language || "не турецкий";
-        area.innerHTML = `<div class="rec-warn">🇹🇷 Похоже, ты говоришь не по-турецки (распознали: <b>${lang}</b>).
-          Это задание нужно выполнить <b>на турецком языке</b>:
+        area.innerHTML = `<div class="rec-warn">🇹🇷 Похоже, это не турецкий (распознали: <b>${lang}</b>).
+          Задание лучше выполнить <b>на турецком</b>:
           <div class="task">${s.current.question}</div>
-          Нажми на микрофон и попробуй ещё раз.</div>`;
+          <button class="btn-ghost" id="rerec">🔄 Перезаписать</button>
+          <button class="btn-ghost" id="useanyway" style="margin-left:8px">Всё равно отправить</button></div>`;
+        document.getElementById("rerec").onclick = () => { s.selected = null; startRec(); };
+        document.getElementById("useanyway").onclick = () => App.submit();
         return;
       }
       // ок — турецкий: воспроизведение + транскрипт + перезапись
@@ -341,7 +344,7 @@ const App = (() => {
     const el = document.getElementById("screen-report");
     const levels = ["A0", "A1", "A2", "B1"];
     const scale = levels.map(l => `<span class="${l === r.level ? "active" : ""}">${l}</span>`).join("");
-    const stColor = st => st === "хорошо" ? "#2e9e6b" : st === "средне" ? "#d68a1e" : "#e23b2e";
+    const stColor = st => ({ "отлично": "#16a34a", "хорошо": "#2e9e6b", "средне": "#d68a1e" }[st] || "#e23b2e");
     const skills = Object.entries(r.skills).map(([k, v]) =>
       `<div class="skill-row"><span class="skill-name">${skillRu(k)}</span>` +
       `<span class="skill-note"><b style="color:${stColor(v.status)}">${v.status}</b> — ${v.note}</span></div>`).join("");
