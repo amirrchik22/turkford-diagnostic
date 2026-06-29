@@ -22,7 +22,7 @@ class Settings(BaseSettings):
 
     # --- OpenAI (для всего: оценка уровня + Whisper) ---
     openai_api_key: str = Field(default="", description="Ключ OpenAI API")
-    eval_model: str = Field(default="gpt-4o", description="Модель для оценки уровня и отчёта")
+    eval_model: str = Field(default="gpt-4o-mini", description="Модель для оценки уровня и отчёта")
     whisper_model: str = Field(default="whisper-1", description="Модель расшифровки аудио")
 
     # --- Поведение теста ---
