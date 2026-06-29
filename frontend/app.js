@@ -365,11 +365,13 @@ const App = (() => {
       <div class="report-block"><h3>План: ${r.plan.target_level}</h3>
         <p class="muted">${r.plan.estimated}</p>
         <ul>${r.plan.topics.map(t => `<li>${t}</li>`).join("")}</ul>
-        <p><b>Режим:</b> ${r.plan.schedule}</p></div>
+        <p style="margin:14px 0 0;font-weight:700">Хотите изучить программу полностью?</p>
+        <a class="btn-ghost" href="${r.recommended_course.url}" target="_blank">Смотреть на сайте</a></div>
       <div class="report-block"><h3>Подходящий курс</h3>
         <p>${r.recommended_course.name} — ${r.recommended_course.why}</p>
         <a class="btn-ghost" href="${r.recommended_course.url}" target="_blank">Посмотреть курс</a></div>
       <div class="promo">🎁 ${r.promo_code} — твоя личная скидка 5 000 ₽ на курс. Сгорает через 24 часа.</div>
+      <p class="consult">Приходи к нам на бесплатную консультацию с менеджером — поможем подобрать курс и зафиксировать комфортные варианты оплаты.</p>
       <button class="btn-primary" onclick="App.go('nps')">Дальше</button>`;
   }
 

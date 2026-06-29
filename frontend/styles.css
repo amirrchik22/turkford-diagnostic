@@ -121,4 +121,9 @@ input[type=range]{width:78%;accent-color:var(--orange)}
 @media(max-width:520px){.skill-row{grid-template-columns:96px 1fr;gap:10px}}
 .promo{font-size:23px;font-weight:800;letter-spacing:1px;color:var(--orange);background:#fff7ec;
   border:2px dashed var(--yellow);border-radius:20px;padding:16px;text-align:center;margin:12px 0}
+.consult{text-align:center;color:#4a5266;font-size:14px;background:#f1fbf6;border:1px solid #cdeede;
+  border-radius:14px;padding:13px 16px;margin:10px 0;line-height:1.5}
+.back-btn{background:none;border:none;color:var(--blue);font-weight:700;font-size:15px;cursor:pointer;
+  padding:0 0 12px;display:inline-block}
+.back-btn:hover{color:var(--orange)}
 @media(max-width:520px){.cards{grid-template-columns:1fr}.wrap{padding:10px}.screen{padding:24px 18px}h1{font-size:24px}}
