@@ -152,8 +152,8 @@ def _mock_report(req: StartRequest, level: Level, zone: Zone, stats: ScoreState)
         ),
         recommended_case=RecommendedCase(
             id="malika", name="Малика",
-            story_before="Знала, что её хочет понять семья мужа, но боялась произнести простую фразу.",
-            story_after="Сама говорит у нотариуса, торгуется на рынке, общается со свекровью.",
+            story_before="Пришла с полным нулём — знала только «merhaba» и «nasılsın?».",
+            story_after="Многое понимает, высказывается у нотариуса, свободно общается в магазинах и кафе — и её понимают!",
         ),
         plan=StudyPlan(
             target_level=course.level,
